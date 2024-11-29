@@ -1,0 +1,46 @@
+.header {
+  @apply w-full
+  h-auto
+  sticky
+  flex
+  items-center
+  justify-center
+  bg-transparent
+  px-6
+  py-4;
+}
+
+.header_container {
+  @apply w-[80%]
+  flex
+  items-center
+  justify-center
+  gap-6
+  py-4
+  px-6
+  bg-gray-300/30
+  rounded-full
+  backdrop-blur-sm;
+}
+
+.menu {
+  @apply flex
+  items-center
+  justify-center
+  gap-6;
+}
+
+.menu_item {
+  @apply text-xl
+  font-semibold
+  text-gray-600
+  hover:text-gray-800
+  transition-all
+  ease-in-out
+  duration-300;
+}
+
+.image_container {
+  @apply w-[100px]
+  md:w-[150px];
+}
