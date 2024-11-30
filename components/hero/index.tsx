@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from 'framer-motion';
 import { HeroContent } from './HeroContent';
 import { HeroImage } from './HeroImage';
 import { BackgroundGradient } from './BackgroundGradient';
