@@ -26,7 +26,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 w-full z-50 transition-all duration-300',
+        'sticky top-0 w-full z-50 transition-all duration-300',
         isScrolled ? styles.headerScrolled : styles.headerDefault,
         styles.header
       )}
