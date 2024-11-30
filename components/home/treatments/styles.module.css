@@ -1,0 +1,44 @@
+.treatmentsSection {
+  @apply bg-gradient-to-b from-white to-gray-50 relative overflow-hidden;
+}
+
+.title {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.gradientText {
+  @apply inline-block;
+  background: linear-gradient(135deg, #E1A7E2 0%, #9C52E5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  @apply text-gray-600 text-lg max-w-2xl mx-auto;
+}
+
+.treatmentCard {
+  @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300
+         border border-gray-100 flex flex-col items-center text-center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.iconWrapper {
+  @apply w-16 h-16 rounded-full flex items-center justify-center mb-4
+         bg-gradient-to-br from-[#E1A7E2] to-[#9C52E5] transform transition-transform
+         duration-300 hover:rotate-12;
+}
+
+.icon {
+  @apply w-8 h-8 text-white;
+}
+
+.cardTitle {
+  @apply text-xl font-semibold mb-3 text-gray-800;
+}
+
+.cardDescription {
+  @apply text-gray-600 text-sm leading-relaxed;
+}
