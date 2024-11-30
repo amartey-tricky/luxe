@@ -1,0 +1,54 @@
+.section {
+  @apply bg-gradient-to-b from-gray-50 to-white relative overflow-hidden;
+}
+
+.title {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.gradientText {
+  @apply inline-block;
+  background: linear-gradient(135deg, #E1A7E2 0%, #9C52E5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  @apply text-gray-600 text-lg max-w-2xl mx-auto;
+}
+
+.testimonialCard {
+  @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300
+         border border-gray-100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.rating {
+  @apply flex gap-1 mb-4;
+}
+
+.star {
+  @apply w-5 h-5 text-yellow-400;
+}
+
+.content {
+  @apply text-gray-600 text-sm leading-relaxed mb-6;
+}
+
+.author {
+  @apply flex items-center gap-4;
+}
+
+.avatar {
+  @apply w-12 h-12 rounded-full object-cover;
+}
+
+.name {
+  @apply font-semibold text-gray-800;
+}
+
+.role {
+  @apply text-sm text-gray-500;
+}
