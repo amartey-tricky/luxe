@@ -1,0 +1,101 @@
+.footer {
+  @apply bg-gradient-to-b from-gray-50 to-white relative pt-16 pb-8;
+}
+
+/* Footer Top Styles */
+.footerTop {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16;
+}
+
+.contactItem {
+  @apply flex items-center space-x-4 p-4 rounded-lg bg-white shadow-sm hover:shadow-md
+         transition-all duration-300 transform hover:-translate-y-1;
+}
+
+.iconWrapper {
+  @apply flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center
+         text-blue-600 transition-colors duration-300;
+}
+
+.icon {
+  @apply w-6 h-6;
+}
+
+.contactLabel {
+  @apply text-sm text-gray-500;
+}
+
+.contactValue {
+  @apply text-sm font-semibold text-gray-900;
+}
+
+/* Footer Main Styles */
+.footerMain {
+  @apply py-12 border-t border-gray-200;
+}
+
+.footerContent {
+  @apply grid grid-cols-1 lg:grid-cols-5 gap-12;
+}
+
+.aboutSection {
+  @apply lg:col-span-2;
+}
+
+.footerTitle {
+  @apply text-2xl font-bold text-gray-900 mb-4;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText {
+  @apply text-2xl font-bold text-gray-900 mb-4;
+  background: linear-gradient(135deg, #E1A7E2 0%, #9C52E5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutText {
+  @apply text-gray-600 mb-6 leading-relaxed;
+}
+
+.socialLinks {
+  @apply flex space-x-4;
+}
+
+.socialIcon {
+  @apply w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600
+         hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110;
+}
+
+.linksGrid {
+  @apply grid grid-cols-2 md:grid-cols-4 lg:col-span-3 gap-8;
+}
+
+.linkTitle {
+  @apply text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4;
+}
+
+.linkList {
+  @apply space-y-3;
+}
+
+.link {
+  @apply text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm block;
+}
+
+/* Footer Bottom Styles */
+.footerBottom {
+  @apply flex flex-col sm:flex-row justify-between items-center pt-8 mt-8 border-t border-gray-200;
+}
+
+.copyright {
+  @apply text-sm text-gray-500 mb-2 sm:mb-0;
+}
+
+.attribution {
+  @apply text-sm text-gray-500;
+}
