@@ -1,46 +1,103 @@
 .header {
-  @apply w-full
-  h-auto
-  sticky
-  flex
-  items-center
-  justify-center
-  bg-transparent
-  px-6
-  py-4;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-.header_container {
-  @apply w-[80%]
-  flex
-  items-center
-  justify-center
-  gap-6
-  py-4
-  px-6
-  bg-gray-300/30
-  rounded-full
-  backdrop-blur-sm;
+.headerDefault {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.menu {
-  @apply flex
-  items-center
-  justify-center
-  gap-6;
+.headerScrolled {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.menu_item {
-  @apply text-xl
-  font-semibold
-  text-gray-600
-  hover:text-gray-800
-  transition-all
-  ease-in-out
-  duration-300;
+.header.hidden {
+  transform: translateY(-100%);
 }
 
-.image_container {
-  @apply w-[100px]
-  md:w-[150px];
+.logoContainer {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logoContainer:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #2563eb;
+  transition: width 0.3s ease-in-out;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+.appointmentButton {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  background-color: #2563eb;
+  color: white;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.appointmentButton:hover {
+  transform: scale(1.05);
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+.menuButton {
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuButton:hover {
+  transform: scale(1.1);
+}
+
+.mobileMenu {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobileMenuOpen {
+  max-height: 100vh;
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobileMenuClosed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
 }

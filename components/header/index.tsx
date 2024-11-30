@@ -1,107 +1,91 @@
 "use client";
 
-import styles from "./index.module.css";
-
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-
-const menu1 = [
-  {
-    id: 1,
-    name: "Home",
-    href: "/"
-  },
-  {
-    id: 2,
-    name: "Treatments",
-    href: "/treatments"
-  },
-  {
-    id: 3,
-    name: "Products",
-    href: "/products"
-  }
-]
-
-const menu2 = [
-  {
-    id: 1,
-    name: "About Us",
-    href: "/about"
-  },
-  {
-    id: 2,
-    name: "Contact Us",
-    href: "/contact"
-  }
-]
-
-const mobileMenu = [
-  {
-    id: 1,
-    name: "Home",
-    href: "/"
-  },
-  {
-    id: 2,
-    name: "Treatments",
-    href: "/treatments"
-  },
-  {
-    id: 3,
-    name: "Products",
-    href: "/products"
-  },
-  {
-    id: 4,
-    name: "About Us",
-    href: "/about"
-  },
-  {
-    id: 5,
-    name: "Contact Us",
-    href: "/contact"
-  }
-]
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Menu, X, Calendar } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/utils';
+import { NavigationMenu } from './NavigationMenu';
+import { MobileMenu } from './MobileMenu';
+import { leftNavItems, rightNavItems } from './navigation-items';
+import styles from './index.module.css';
 
 export function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
-      <div className={styles.header_container}>
-        <nav className={styles.menu}>
-          {/* Left Menu */}
-          {menu1.map((item) => (
-            <Link key={item.id} href={item.href} className={styles.menu_item}>
-              {item.name}
+    <header
+      className={cn(
+        'fixed top-0 w-full z-50 transition-all duration-300',
+        isScrolled ? styles.headerScrolled : styles.headerDefault,
+        styles.header
+      )}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Left Navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <NavigationMenu items={leftNavItems} />
+          </div>
+
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/" className={styles.logoContainer}>
+              <Image
+                src="https://utfs.io/f/NLBok024UocESdVltPx3Vtj2QJpluUD91egMziIZY4NTXGbc"
+                alt="Clinic Logo"
+                width={180}
+                height={60}
+                className={styles.logo}
+                priority
+              />
             </Link>
-          ))}
-        </nav>
-        <div className={styles.image_container}>
-          {/* Central Logo */}
-          <Link href="/">
-            <Image
-              src="https://utfs.io/f/NLBok024UocESdVltPx3Vtj2QJpluUD91egMziIZY4NTXGbc"
-              alt="Luxe Clinic Logo"
-              width={200}
-              height={50}
-            />
-          </Link>
-        </div>
-        <nav className={styles.menu}>
-          {/* Right Menu */}
-          {menu2.map((item) => (
-            <Link key={item.id} href={item.href} className={styles.menu_item}>
-              {item.name}
-            </Link>
-          ))}
-        </nav>
-        <div>
-          <Link href="/appointments">
-            Book Appointment
-          </Link>
+          </div>
+
+          {/* Right Navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <NavigationMenu items={rightNavItems} />
+            <Button
+              size="lg"
+              className={styles.appointmentButton}
+            >
+              <Calendar className="mr-2 h-4 w-4" />
+              Book Appointment
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={styles.menuButton}
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </Button>
+          </div>
         </div>
       </div>
+
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        navItems={[...leftNavItems, ...rightNavItems]}
+      />
     </header>
-  )
+  );
 }
