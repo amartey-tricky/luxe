@@ -71,7 +71,7 @@ export function FooterMain() {
         {/* Links Sections */}
         <div className={styles.linksGrid}>
           <div>
-            <h4 className={styles.linkTitle}>Services</h4>
+            <h4 className={styles.linkTitle}>Treatments</h4>
             <ul className={styles.linkList}>
               {footerLinks.services.map((link) => (
                 <li key={link.href}>

@@ -1,0 +1,153 @@
+.serviceCard {
+  @apply bg-white
+  rounded-lg
+  shadow-md
+  border-2
+  hover:border-purple-200
+  transition-colors
+  p-6;
+}
+
+.serviceCardIconContainer {
+  @apply mb-4;
+}
+
+.serviceCardIconContainer {
+  @apply w-16
+  h-16
+  rounded-full
+  flex
+  items-center
+  justify-center
+  mb-4
+  bg-gradient-to-br
+  from-[#E1A7E2]
+  to-[#9C52E5]
+  transform
+  transition-transform
+  duration-300
+  hover:animate-bounce
+  hover:scale-110
+  hover:rotate-12;
+}
+
+.serviceCardIcon {
+  @apply text-white
+  w-8
+  h-8;
+}
+
+.serviceCardTitle {
+  @apply text-2xl
+font-bold
+mb-2;
+}
+
+.serviceCardDescription {
+  @apply text-gray-600
+  mb-4;
+}
+
+.serviceCardTreatmentsContainer {
+  @apply space-y-2
+  mb-4;
+}
+
+.serviceCardLink {
+  @apply block w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.serviceGrid {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-3
+  gap-6;
+}
+
+.page {
+  @apply min-h-screen
+  bg-gradient-to-b
+  from-white
+  to-purple-100/50;
+}
+
+.titleContainer {
+  @apply px-4
+  py-12
+  md:py-24
+  lg:py-32;
+}
+
+.titleWrapper {
+  @apply container
+  mx-auto;
+}
+
+.titleWrap {
+  @apply text-center
+  space-y-4;
+}
+
+.title {
+  @apply text-4xl
+  md:text-5xl
+  lg:text-6xl
+  font-bold
+  tracking-tighter;
+}
+
+.titleDescription {
+  @apply text-xl
+  text-gray-600
+  max-w-[800px]
+  mx-auto;
+}
+
+.servicesContainer {
+  @apply px-4
+  py-12;
+}
+
+.servicesWrapper {
+  @apply container
+  mx-auto;
+}
+
+.ctaContainer {
+  @apply px-4 py-12 md:py-24;
+}
+
+.ctaWrapper {
+  @apply container mx-auto;
+}
+
+.ctaWrap {
+  @apply bg-white rounded-2xl p-8 md:p-12 shadow-lg max-w-4xl mx-auto text-center space-y-6;
+}
+
+.ctaIcon {
+  @apply w-12 h-12 text-purple-400 mx-auto;
+}
+
+.ctaTitle {
+  @apply text-3xl md:text-4xl font-bold tracking-tighter;
+}
+
+.ctaDescription {
+  @apply text-lg text-gray-600 max-w-[600px] mx-auto;
+}
+
+.ctaButtonContainer {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+
+.ctaButton {
+  @apply bg-gradient-to-r from-[#E1A7E2] to-[#9C52E5] text-white hover:shadow-lg 
+         transform hover:scale-105 transition-all duration-300 py-3 px-6 rounded font-bold;
+}
+
+.ctaButtonAlt {
+  @apply border-2 border-[#9C52E5] text-[#9C52E5] hover:bg-[#9C52E5] hover:text-white
+         transform hover:scale-105 transition-all duration-300 py-3 px-6 rounded font-bold;
+}
