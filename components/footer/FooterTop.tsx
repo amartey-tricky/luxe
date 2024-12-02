@@ -5,21 +5,21 @@ import styles from './styles.module.css';
 const contactInfo = [
   {
     icon: Phone,
-    label: "24/7 Emergency",
-    value: "(555) 123-4567",
-    href: "tel:+15551234567"
+    label: "Call Us",
+    value: "0302 980 050",
+    href: "tel:+2333029880050"
   },
   {
     icon: Mail,
     label: "Email Us",
-    value: "contact@modernclinic.com",
-    href: "mailto:contact@modernclinic.com"
+    value: "luxeclinic@gmail.com",
+    href: "mailto:luxeclinic@gmail.com"
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "123 Medical Center Dr, NY",
-    href: "https://maps.google.com"
+    value: "Kalpohini Estates, Tamale, Ghana",
+    href: "https://maps.app.goo.gl/Z9SHcp2LWyrCT4X96"
   },
   {
     icon: Clock,
