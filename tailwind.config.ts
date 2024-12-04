@@ -16,6 +16,7 @@ export default {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require("tailwind-merge")
+    require("tailwind-merge"),
+    require("@tailwindcss/forms")
   ],
 } satisfies Config;

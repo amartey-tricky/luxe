@@ -1,0 +1,140 @@
+.form {
+  @apply space-y-6;
+}
+
+.label {
+  @apply block
+  text-gray-600
+  font-bold
+  mb-2;
+}
+
+.input {
+  @apply rounded-lg
+  border-purple-500
+  px-4
+  py-2
+  focus:outline-none
+  outline-none
+  text-gray-600
+  placeholder:text-gray-400
+  focus:border-purple-600
+  focus:ring-purple-600
+  transition-colors
+  duration-200
+  ease-in-out
+  w-full;
+}
+
+.error {
+  @apply text-red-500
+  text-sm
+  mt-1
+  font-bold;
+}
+
+.button {
+  @apply w-full
+  rounded-lg
+  p-3
+  bg-gradient-to-b
+  from-[#E1A7E2]
+  to-[#9C52E5]
+  text-white
+  font-bold
+  hover:shadow-lg
+  hover:scale-110
+  hover:animate-bounce
+  transition-all
+  transform
+  duration-200
+  ease-in-out;
+}
+
+.button:disabled {
+  @apply bg-gray-400
+  cursor-not-allowed;
+}
+
+.main {
+  @apply min-h-screen
+  bg-gradient-to-b
+  from-white
+  to-purple-100/50;
+}
+
+.pageContainer {
+  @apply container
+  mx-auto
+  px-4
+  py-12
+  md:py-24;
+}
+
+.pageTitle {
+  @apply text-4xl
+  md:text-5xl
+  font-bold
+  text-center
+  mb-12;
+}
+
+.section {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  gap-12;
+}
+
+.sectionContainer {
+  @apply bg-white
+  rounded-lg
+  px-4
+  py-12
+  shadow-md;
+}
+
+.sectionTitle {
+  @apply font-bold
+  text-2xl
+  text-center
+  mb-6;
+}
+
+.contactInfo {
+  @apply space-y-6;
+}
+
+.contactInfoItem_first {
+  @apply flex
+  items-start
+}
+
+.contactInfoIcon_first {
+  @apply w-6
+  h-6
+  text-purple-600
+  mr-3
+  mt-1;
+}
+
+.contactInfoTitle{
+  @apply font-semibold;
+}
+
+.contactInfoDescription {
+  @apply text-gray-600
+  text-sm;
+}
+
+.contactInfoItem {
+  @apply flex
+  items-center;
+}
+
+.contactInfoIcon {
+  @apply w-6
+  h-6
+  text-purple-600
+  mr-3;
+}
