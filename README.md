@@ -28,6 +28,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Todo:
 
 [ ] e-commerce page
+
 [ ] patient appointment page
+
 [ ] staff dashboard page
-[ ] healthcare dashboard page
+
+[x] healthcare dashboard page
