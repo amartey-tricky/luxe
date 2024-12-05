@@ -16,7 +16,7 @@ export function SectionTitle() {
         Our Specialized <span className={styles.gradientText}>Treatments</span>
       </h2>
       <p className={styles.subtitle}>
-        Comprehensive care for women's health and aesthetic needs
+        Comprehensive health care and aesthetic needs
       </p>
     </motion.div>
   );
