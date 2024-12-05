@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: Clock,
-    title: "24/7 Support",
-    description: "Round-the-clock care and support for emergencies and patient inquiries."
+    title: "Personalized Treatment Plans",
+    description: "Experience care that's as unique as you are. Personalized treatment plans for optimal health."
   },
   {
     icon: HeartPulse,
