@@ -8,17 +8,17 @@ const features = [
   {
     icon: Award,
     title: "Excellence in Care",
-    description: "Award-winning medical services with state-of-the-art technology and techniques."
+    description: "Excellence in Care, Your Beauty, Our Priority. Delivering personalized, compassionate, and exceptional aesthetic care."
   },
   {
     icon: Users,
     title: "Expert Team",
-    description: "Board-certified physicians and specialists with decades of combined experience."
+    description: "Where expertise meets artistry. Our team is dedicated to helping you achieve your aesthetic goals."
   },
   {
     icon: Clock,
-    title: "24/7 Support",
-    description: "Round-the-clock care and support for emergencies and patient inquiries."
+    title: "Schedule Your Visit",
+    description: "Take the First Step Towards Your Dream Look. Schedule Your Visit Today."
   },
   {
     icon: HeartPulse,

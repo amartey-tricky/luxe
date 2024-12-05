@@ -13,38 +13,38 @@ import {
 export const treatments = [
   {
     "id": "prenatal-care",
-    "title": "Prenatal Care",
-    "description": "Comprehensive pregnancy care and monitoring for expecting mothers.",
+    "title": "Chemical Peel",
+    "description": "Brighten, smooth, and rejuvenate your skin with our expert chemical peels.",
     "icon": Baby
   },
   {
     "id": "gynecology",
-    "title": "Gynecology",
-    "description": "Complete women's health services and preventive care.",
+    "title": "Family Planning",
+    "description": "Take Control of Your Reproductive Health.",
     "icon": Stethoscope
   },
   {
     "id": "cosmetic-surgery",
-    "title": "Cosmetic Surgery",
-    "description": "Advanced surgical procedures to enhance natural beauty.",
+    "title": "Cosmetic Teeth Whitening",
+    "description": "Brighten Your Smile, Boost Your Confidence.",
     "icon": Scissors
   },
   {
     "id": "hormone-therapy",
-    "title": "Hormone Therapy",
-    "description": "Personalized hormone replacement and balance treatments.",
+    "title": "PRP Therapy",
+    "description": "Stimulate Collagen, Restore Youthfulness with PRP Treatments.",
     "icon": FlaskConical
   },
   {
     "id": "fertility",
-    "title": "Fertility Treatment",
-    "description": "Advanced fertility solutions and family planning services.",
+    "title": "Female Intimate Rejuvination",
+    "description": "Minimally invasive injection to revitalize vaginal health and enhance sexual satisfaction.",
     "icon": Heart
   },
   {
     "id": "wellness",
-    "title": "Wellness Programs",
-    "description": "Holistic health and wellness programs for optimal living.",
+    "title": "Laser Therapy",
+    "description": "Precise, Effective, and Pain-Free Treatments.",
     "icon": UserPlus
   },
   {
@@ -61,8 +61,8 @@ export const treatments = [
   },
   {
     "id": "diagnostics",
-    "title": "Advanced Diagnostics",
-    "description": "State-of-the-art diagnostic testing and screening services.",
+    "title": "P-Shot",
+    "description": "Say Goodbye to Erectile Dysfunction, Hello to a Healthier You.",
     "icon": Microscope
   }
 ];
