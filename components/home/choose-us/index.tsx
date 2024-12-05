@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Personalized Treatment Plans",
-    description: "Experience care that's as unique as you are. Personalized treatment plans for optimal health."
+    title: "Schedule Your Visit",
+    description: "Take the First Step Towards Your Dream Look. Schedule Your Visit Today."
   },
   {
     icon: HeartPulse,
