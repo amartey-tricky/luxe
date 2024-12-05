@@ -47,8 +47,7 @@ export function FooterMain() {
         <div className={styles.aboutSection}>
           <h3 className={styles.gradientText}>Luxe Clinic</h3>
           <p className={styles.aboutText}>
-            Leading the way in women's health and cosmetic surgery. Our commitment
-            to excellence and patient care sets us apart in healthcare services.
+            Our collective ambition is to ensure excellence in all treatments and care service that we render,ensuring every patient feels supported in looking and feeling their very best.
           </p>
           <div className={styles.socialLinks}>
             {socialLinks.map((social) => {
