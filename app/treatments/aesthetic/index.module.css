@@ -152,3 +152,10 @@
   w-12
   h-12;
 }
+
+.main {
+  @apply min-h-screen
+  bg-gradient-to-b
+  from-white
+  to-purple-100/50;
+}

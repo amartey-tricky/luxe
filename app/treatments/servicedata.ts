@@ -8,11 +8,6 @@ export const services = [
     treatments: [
       "• Chemical Peels",
       "• Facials",
-      "• Laser Skin",
-      "• Botox and Fillers",
-      "• Hydrafacial",
-      "• Chemical Exfoliation",
-      "• Laser Hair Removal"
     ],
     link: "/treatments/aesthetic",
     cta: "Book a Consultation"
@@ -24,7 +19,6 @@ export const services = [
     treatments: [
       "• PRP Therapy (Platelet-Rich Plasma Therapy)",
       "• Medical Weight Loss Therapy",
-      "• Family Planning"
     ],
     link: "/treatments/medical",
     cta: "Schedule a Consultation"

@@ -33,7 +33,7 @@ export function ServiceGrid() {
           description={service.description}
           treatments={service.treatments}
           link={service.link}
-          cta={service.cta}
+          cta="Learn More"
           />
       ))}
     </motion.section>
