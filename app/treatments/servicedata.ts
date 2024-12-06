@@ -4,40 +4,40 @@ export const services = [
   {
     icon: Sparkles,
     title: "Aesthetic Treatments",
-    description: "Adavanced cosmetic treatments to enhance your natural beauty.",
+    description: "These treatments focus on enhancing physical appearance by improving skin texture, tone, and overall beauty.",
     treatments: [
-      "• Facial Rejuvenation",
-      "• Skin Tightening",
-      "• Anti-Aging Treatments",
-      "• Dermal Fillers"
+      "• Chemical Peels",
+      "• Facials",
+      "• Laser Skin",
+      "• Botox and Fillers",
+      "• Hydrafacial",
+      "• Chemical Exfoliation",
+      "• Laser Hair Removal"
     ],
-    link: "/treatments",
+    link: "/treatments/aesthetic",
     cta: "Book a Consultation"
   },
   {
     icon: Syringe,
     title: "Medical Treatments",
-    description: "Professional medical services with state-of-the-art technology.",
+    description: "These therapies address specific health or medical conditions, including skin regeneration and hormone management.",
     treatments: [
-      "• Gynecological Care",
-      "• Obstetric Services",
-      "• Preventive Medicine",
-      "• Health Screenings"
+      "• PRP Therapy (Platelet-Rich Plasma Therapy)",
+      "• Medical Weight Loss Therapy",
+      "• Family Planning"
     ],
-    link: "/treatments",
+    link: "/treatments/medical",
     cta: "Schedule a Consultation"
   },
   {
     icon: UserPlus,
     title: "Wellness Programs",
-    description: "Personalized wellness programs designed to support your overall health and well-being.",
+    description: "These treatments aim to improve overall health, hydration, and vitality, contributing to a balanced lifestyle.",
     treatments: [
-      "• Nutritional Counseling",
-      "• Lifestyle Medicine",
-      "• Weight Management",
-      "• Hormone Therapy"
+      "• IV Infusion Therapy",
+      "• Laser Therapy",
     ],
-    link: "/treatments",
+    link: "/treatments/wellness",
     cta: "Learn More"
   }
 ]
