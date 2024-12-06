@@ -4,22 +4,20 @@ import styles from './styles.module.css';
 
 const footerLinks = {
   services: [
-    { label: "Obstetrics", href: "/services/obstetrics" },
-    { label: "Gynecology", href: "/services/gynecology" },
-    { label: "Cosmetic Surgery", href: "/services/cosmetic" },
-    { label: "Fertility Treatment", href: "/services/fertility" },
-    { label: "Wellness Programs", href: "/services/wellness" }
+    { label: "PRP Therapy", href: "/services/obstetrics" },
+    { label: "Female Intimacy Rejuvination", href: "/services/gynecology" },
+    { label: "Medical Weight Loss", href: "/services/cosmetic" },
+    { label: "Laser Therapy", href: "/services/fertility" },
+    { label: "IV Infusions", href: "/services/wellness" }
   ],
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Our Doctors", href: "/doctors" },
+    { label: "Our Staff", href: "/doctors" },
     { label: "Careers", href: "/careers" },
     { label: "News & Media", href: "/news" },
     { label: "Contact", href: "/contact" }
   ],
   resources: [
-    { label: "Patient Portal", href: "/portal" },
-    { label: "Insurance", href: "/insurance" },
     { label: "FAQs", href: "/faqs" },
     { label: "Blog", href: "/blog" },
     { label: "Support", href: "/support" }
