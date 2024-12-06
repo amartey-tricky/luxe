@@ -58,7 +58,7 @@
 .appointmentButton {
   transform: scale(1);
   transition: all 0.2s ease-in-out;
-  background-color: #2563eb;
+  background-color: #9b59d9;
   color: white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -67,7 +67,7 @@
 
 .appointmentButton:hover {
   transform: scale(1.05);
-  background-color: #1d4ed8;
+  background-color: #dda6e2;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
 }
 
