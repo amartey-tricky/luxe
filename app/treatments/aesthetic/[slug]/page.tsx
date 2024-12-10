@@ -29,21 +29,6 @@ type PageProps = {
   params: { slug: string }
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const treatment = treatments.find(t => t.slug === params.slug)
-
-  if (!treatment) {
-    return {
-      title: "Aesthetic Treatment Not Found",
-    }
-  }
-
-  return {
-    title: `${treatment.name} | Aesthetic Treatment`,
-    description: treatment.fullDescription,
-  }
-}
-
 export default function Page({ params }: PageProps) {
   const treatment = treatments.find(t => t.slug === params.slug)
 
