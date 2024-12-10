@@ -65,4 +65,22 @@ export const treatments = [
     "description": "Say Goodbye to Erectile Dysfunction, Hello to a Healthier You.",
     "icon": Microscope
   }
+  {
+    "id": "prenatal-care",
+    "title": "Chemical Peel",
+    "description": "Brighten, smooth, and rejuvenate your skin with our expert chemical peels.",
+    "icon": Baby
+  },
+  {
+    "id": "gynecology",
+    "title": "Family Planning",
+    "description": "Take Control of Your Reproductive Health.",
+    "icon": Stethoscope
+  },
+  {
+    "id": "cosmetic-surgery",
+    "title": "Cosmetic Teeth Whitening",
+    "description": "Brighten Your Smile, Boost Your Confidence.",
+    "icon": Scissors
+  },
 ];
