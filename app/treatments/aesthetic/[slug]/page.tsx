@@ -25,7 +25,7 @@ const treatments = [
   }
 ]
 
-export async function generateMetadata({params}: { params: {slug: string} }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const treatment = treatments.find(t => t.slug === params.slug)
 
   if (!treatment) {
