@@ -1,0 +1,138 @@
+.main {
+  @apply min-h-screen
+  bg-gradient-to-b
+  from-white
+  to-purple-100/50
+  py-16;
+}
+
+.main_container {
+  @apply container
+  mx-auto
+  px-4
+  sm:px-6
+  lg:px-8;
+}
+
+.back_button {
+  @apply inline-flex
+  items-center
+  text-purple-500
+  hover:text-purple-700
+  mb-8;
+}
+
+.back_button_icon {
+  @apply mr-2
+  h-6
+  w-6;
+}
+
+.treatment_grid {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  gap-12;
+}
+
+.treatment_title {
+  @apply text-4xl
+  font-extrabold
+  text-purple-800
+  mb-4;
+}
+
+.treatment_card {
+  @apply flex
+  items-center
+  mb-6;
+}
+
+.treatment_icon_container {
+  @apply rounded-full
+  bg-purple-200
+  p-4
+  mr-4;
+}
+
+.treatment_icon {
+  @apply h-8
+  w-8
+  text-purple-600;
+}
+
+.treatment_description {
+  @apply text-xl
+  text-gray-600;
+}
+
+.treatment_fulldescription {
+  @apply text-gray-700
+  text-justify
+  mb-8;
+}
+
+.treatment_benefits_title {
+  @apply text-2xl
+  font-bold
+  text-gray-900
+  mb-4;
+}
+
+.treatment_benefits_list {
+  @apply list-disc
+  list-inside
+  space-y-2
+  mb-8;
+}
+
+.treatment_benefit {
+  @apply text-gray-700;
+}
+
+.treatment_procedure_list {
+  @apply text-gray-700;
+}
+
+.treatment_image {
+  @apply rounded-lg
+  shadow-lg
+  mb-8;
+}
+
+.treatment_contact_container {
+  @apply bg-white
+  rounded-lg
+  shadow-lg
+  p-6;
+}
+
+.treatment_contact_title {
+  @apply text-2xl
+  font-bold
+  text-gray-900
+  mb-4;
+}
+
+.treatment_contact_text {
+  @apply text-gray-700
+  text-justify
+  mb-4;
+}
+
+.treatment_contact_button {
+  @apply inline-flex
+  items-center
+  justify-center
+  px-6
+  py-3
+  border
+  border-transparent
+  text-base
+  font-medium
+  rounded-md
+  text-white
+  bg-purple-600
+  hover:bg-purple-700
+  focus:outline-none;
+}
