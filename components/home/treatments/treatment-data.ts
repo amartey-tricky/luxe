@@ -64,7 +64,7 @@ export const treatments = [
     "title": "P-Shot",
     "description": "Say Goodbye to Erectile Dysfunction, Hello to a Healthier You.",
     "icon": Microscope
-  }
+  },
   {
     "id": "prenatal-care",
     "title": "Chemical Peel",
