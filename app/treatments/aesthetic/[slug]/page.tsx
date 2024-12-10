@@ -25,7 +25,11 @@ const treatments = [
   }
 ]
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+type PageProps = {
+  params: { slug: string }
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const treatment = treatments.find(t => t.slug === params.slug)
 
   if (!treatment) {
@@ -40,7 +44,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default function Page({ params }: PageProps) {
   const treatment = treatments.find(t => t.slug === params.slug)
 
   if (!treatment) {
