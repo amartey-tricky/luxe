@@ -26,8 +26,8 @@ export function NavigationMenu({ items }: NavigationMenuProps) {
           className={cn(
             'text-base font-medium transition-colors duration-200',
             pathname === item.href
-              ? 'text-blue-600'
-              : 'text-gray-600 hover:text-blue-600',
+              ? 'text-purple-600'
+              : 'text-gray-600 hover:text-purple-600',
             styles.navItem
           )}
         >

@@ -14,19 +14,11 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Our Staff", href: "/doctors" },
     { label: "Careers", href: "/careers" },
-    { label: "News & Media", href: "/news" },
     { label: "Contact", href: "/contact" }
   ],
   resources: [
     { label: "FAQs", href: "/faqs" },
-    { label: "Blog", href: "/blog" },
     { label: "Support", href: "/support" }
-  ],
-  legal: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms of Use", href: "/terms" },
-    { label: "Accessibility", href: "/accessibility" },
-    { label: "Cookie Policy", href: "/cookies" }
   ]
 };
 
@@ -97,19 +89,6 @@ export function FooterMain() {
             <h4 className={styles.linkTitle}>Resources</h4>
             <ul className={styles.linkList}>
               {footerLinks.resources.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className={styles.link}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className={styles.linkTitle}>Legal</h4>
-            <ul className={styles.linkList}>
-              {footerLinks.legal.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className={styles.link}>
                     {link.label}

@@ -21,9 +21,9 @@ export function Button({
     <button
       className={cn(
         'inline-flex items-center justify-center rounded-md font-medium transition-all duration-200',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2',
         {
-          'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800': variant === 'primary',
+          'bg-purple-600 text-white hover:bg-purple-700 active:bg-purple-800': variant === 'primary',
           'text-gray-700 hover:bg-gray-100/50 active:bg-gray-200/50': variant === 'ghost',
           'h-10 px-4 py-2': size === 'default',
           'h-12 px-6 py-3 text-lg': size === 'lg',
