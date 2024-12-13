@@ -29,6 +29,8 @@ export function HeroContent() {
           size="lg" 
           variant="ghost" 
           className={styles.secondaryButton}
+          as="a"
+          href="/treatments"
         >
           Our Services
         </Button>

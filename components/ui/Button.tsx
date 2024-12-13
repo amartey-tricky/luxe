@@ -8,6 +8,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'ghost';
   size?: 'default' | 'lg' | 'icon';
   className?: string;
+  as?: keyof JSX.IntrinsicElements;
+  href?: string;
 }
 
 export function Button({
@@ -15,6 +17,8 @@ export function Button({
   variant = 'primary',
   size = 'default',
   className,
+  as = 'button',
+  href,
   ...props
 }: ButtonProps) {
   return (
