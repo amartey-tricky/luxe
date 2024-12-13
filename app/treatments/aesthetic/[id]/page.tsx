@@ -1,19 +1,9 @@
 import styles from "./index.module.css";
-import { treatmentData } from "./care-data";
 
-import { LucideIcon, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-interface TreatmentProps {
-  id: number;
-  name: string;
-  slug: string;
-  description: string;
-  icon: LucideIcon;
-  fullDescription: string;
-  benefits: string[];
-}
+import { getTreatmentBySlug, getAllTreatmentSlugs } from "./treatment";
 
 type Props = {
   params: {
@@ -21,16 +11,14 @@ type Props = {
   }
 }
 
-export default function TreatmentPage(props: Props) {
-  const treatment = treatmentData.find((t: TreatmentProps) => t.slug === props.params.id)
- //const treatment = treatmentData.find((t: TreatmentProps) => t.id === Number.parseInt(params.id))
- // const treatment = treatmentData.find((t: TreatmentProps) => t.slug === params.id)
+export async function generateStaticParams() {
+  return getAllTreatmentSlugs();
+}
 
-  if (!treatment) {
-    return <div>Treatment not found</div>;
-  }
-
-  const TreatmentIcon = treatment.icon
+export default async function TreatmentPage({ params }: Props) {
+  const props = await params
+  const treatment = getTreatmentBySlug(props.id);
+  const TreatmentIcon = treatment.icon;
   
   return (
     <main className={styles.main}>

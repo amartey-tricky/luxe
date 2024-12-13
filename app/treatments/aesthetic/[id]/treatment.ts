@@ -1,6 +1,19 @@
-import { Droplet } from "lucide-react";
+import { LucideIcon, Droplet } from "lucide-react";
+import { notFound } from "next/navigation";
 
-export const treatmentData = [
+export interface TreatmentProps {
+  id: number;
+  name: string;
+  slug: string;
+  description: string;
+  icon: LucideIcon;
+  fullDescription: string;
+  benefits: string[];
+  procedure: string;
+  image: string;
+}
+
+export const treatmentData: TreatmentProps[] = [
   {
     id: 1,
     name: "Chemical Peels",
@@ -19,3 +32,19 @@ export const treatmentData = [
     image: ""
   }
 ]
+
+export function getTreatmentBySlug(slug: string): TreatmentProps {
+  const treatment = treatmentData.find((t) => t.slug === slug);
+
+  if (!treatment) {
+    notFound();
+  }
+
+  return treatment;
+}
+
+export function getAllTreatmentSlugs(): { slug: string }[] {
+  return treatmentData.map((treatment) => ({
+    slug: treatment.slug
+  }))
+}
