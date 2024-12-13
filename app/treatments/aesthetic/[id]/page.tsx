@@ -15,7 +15,11 @@ export async function generateStaticParams() {
   return getAllTreatmentSlugs();
 }
 
-export default async function TreatmentPage({ params }: Props) {
+export default async function TreatmentPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const props = await params
   const treatment = getTreatmentBySlug(props.id);
   const TreatmentIcon = treatment.icon;
