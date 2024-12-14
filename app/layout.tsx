@@ -22,6 +22,25 @@ const description = "A clinic management system for Luxe Clinic"
 export const metadata: Metadata = {
   title: title,
   description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    siteName: title,
+    type: "website",
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: title,
+    description: description,
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ],
+    creator: "@luxeclinic",
+    site: "@luxeclinic"
+  }
 };
 
 export default function RootLayout({
