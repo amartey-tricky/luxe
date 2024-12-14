@@ -6,7 +6,7 @@ import styles from "./index.module.css";
 
 export function AestheticGrid() {
   return (
-    <section className={styles.aetheticGrid} id="aethetic">
+    <section className={styles.aetheticGrid} id="aesthetic">
       <div className={styles.gridContainer}>
         <h2 className={styles.gridTitle}>Our Aesthetic Treatments</h2>
         <div className={styles.gridCards}>

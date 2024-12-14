@@ -1,8 +1,39 @@
+.cardLink {
+  @apply block
+  no-underline
+  cursor-pointer;
+}
+
 .aetheticCard {
   @apply bg-white
   rounded-lg
   shadow-lg
-  overflow-hidden;
+  overflow-hidden
+  transition-all
+  duration-300
+  ease-in-out;
+}
+
+.cardLink:hover .aetheticCard,
+.cardLink:focus .aetheticCard {
+  @apply shadow-xl;
+}
+
+.cardHover {
+  background: linear-gradient(90deg, hsla(271, 81%, 56%, 0.4) 0%, hsla(269, 100%, 95%, 1) 100%);
+  @apply shadow-xl;
+}
+
+.cardHover .cardTitle {
+  @apply text-gray-900;
+}
+
+.cardHover .cardDescription {
+  @apply text-gray-700;
+}
+
+.cardHover .iconTransform {
+  @apply bg-white/20;
 }
 
 .iconContainer {
@@ -18,7 +49,10 @@
 .iconTransform {
   @apply rounded-full
   bg-purple-100
-  p-4;
+  p-4
+  transition-all
+  duration-300
+  ease-in-out;
 }
 
 .icon {
@@ -32,12 +66,18 @@
   font-semibold
   text-gray-900
   mb-2
-  text-center;
+  text-center
+  transition-all
+  duration-300
+  ease-in-out;
 }
 
 .cardDescription {
   @apply text-gray-600
-  text-center;
+  text-center
+  transition-all
+  duration-300
+  ease-in-out;
 }
 
 .aetheticGrid {

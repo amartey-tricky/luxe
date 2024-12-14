@@ -5,12 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "./treatment";
 
-type Props = {
-  params: {
-    id: string;
-  }
-}
-
 export async function generateStaticParams() {
   return getAllTreatmentSlugs();
 }

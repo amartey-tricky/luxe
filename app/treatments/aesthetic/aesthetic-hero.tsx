@@ -19,7 +19,7 @@ export function AestheticHero() {
             Discover our range of aesthetic treatments designed to help you achieve radiant, youthful skin and boost your confidence.
           </p>
           <motion.a
-            href="#aethetic"
+            href="#aesthetic"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className={styles.heroLink}
