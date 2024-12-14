@@ -1,7 +1,35 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Calendar } from 'lucide-react';
 import { ServiceGrid } from "./servicegrid";
 import styles from './index.module.css';
+
+const title = 'Treatments || Luxe Clinic';
+const description = 'Experience exceptional care with our comprehensive range of medical and aesthetic services, tailored to enhance your natural beauty and well-being.';
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    siteName: title,
+    type: 'website',
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEi8S6fbvETcldH19G7r5xp803kbJBMvWqhPgj" }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: title,
+    description: description,
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEi8S6fbvETcldH19G7r5xp803kbJBMvWqhPgj" }
+    ],
+    creator: '@luxeclinic',
+    site: '@luxeclinic'
+  },
+}
 
 export default function Page() {
   return (
