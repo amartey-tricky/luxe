@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Droplet, Zap, Leaf } from 'lucide-react'
+import Link from 'next/link'
 
 const treatments = [
   {
@@ -29,7 +30,7 @@ export default function WellnessPage() {
 
 function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -93,10 +94,12 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white rounded-lg shadow-lg overflow-hidden"
+      className={`bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out
+        ${isHovered ? 'bg-gradient-to-br from-green-100 to-white' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <Link href={`/treatments/wellness/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
       <div className="p-6">
         <div className="flex justify-center mb-4">
           <motion.div
@@ -110,6 +113,7 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
         <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">{treatment.name}</h3>
         <p className="text-gray-600 text-center">{treatment.description}</p>
       </div>
+      </Link>
     </motion.div>
   )
 }
