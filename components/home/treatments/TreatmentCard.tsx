@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
+import Link from 'next/link';
 import styles from './styles.module.css';
 
 interface TreatmentCardProps {
@@ -28,11 +29,13 @@ export function TreatmentCard({ treatment, index }: TreatmentCardProps) {
       className={styles.treatmentCard}
       whileHover={{ y: -5, transition: { duration: 0.2 } }}
     >
+      <Link href={`/treatments/${treatment.id}`}>
       <div className={styles.iconWrapper}>
         <Icon className={styles.icon} />
       </div>
       <h3 className={styles.cardTitle}>{treatment.title}</h3>
       <p className={styles.cardDescription}>{treatment.description}</p>
+      </Link>
     </motion.div>
   );
 }

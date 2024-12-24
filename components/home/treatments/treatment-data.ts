@@ -1,68 +1,26 @@
 import {
-  Baby,
-  Stethoscope,
-  Scissors,
-  Heart,
-  UserPlus,
+  Sparkles,
   Syringe,
-  Scale,
-  Microscope,
-  FlaskConical
+  UserPlus
 } from "lucide-react";
 
 export const treatments = [
   {
-    "id": "prenatal-care",
-    "title": "Chemical Peel",
-    "description": "Brighten, smooth, and rejuvenate your skin with our expert chemical peels.",
-    "icon": Baby
+    id: "aesthetic",
+    title: "Medical Aesthetics",
+    description: "These treatments focus on enhancing physical appearance by improving skin texture, tone, and overall beauty.",
+    icon: Sparkles,
   },
   {
-    "id": "gynecology",
-    "title": "Family Planning",
-    "description": "Take Control of Your Reproductive Health.",
-    "icon": Stethoscope
+    id: "medical",
+    title: "Medical Treatments",
+    description: "These therapies address specific health or medical conditions, including skin regeneration and hormone management.",
+    icon: Syringe,
   },
   {
-    "id": "cosmetic-surgery",
-    "title": "Cosmetic Teeth Whitening",
-    "description": "Brighten Your Smile, Boost Your Confidence.",
-    "icon": Scissors
-  },
-  {
-    "id": "hormone-therapy",
-    "title": "PRP Therapy",
-    "description": "Stimulate Collagen, Restore Youthfulness with PRP Treatments.",
-    "icon": FlaskConical
-  },
-  {
-    "id": "fertility",
-    "title": "Female Intimate Rejuvination",
-    "description": "Minimally invasive injection to revitalize vaginal health and enhance sexual satisfaction.",
-    "icon": Heart
-  },
-  {
-    "id": "wellness",
-    "title": "Laser Therapy",
-    "description": "Precise, Effective, and Pain-Free Treatments.",
-    "icon": UserPlus
-  },
-  {
-    "id": "aesthetics",
-    "title": "Medical Aesthetics",
-    "description": "Non-surgical cosmetic treatments and skin rejuvenation.",
-    "icon": Syringe
-  },
-  {
-    "id": "weight-management",
-    "title": "Weight Management",
-    "description": "Personalized weight management and nutrition programs.",
-    "icon": Scale
-  },
-  {
-    "id": "diagnostics",
-    "title": "P-Shot",
-    "description": "Say Goodbye to Erectile Dysfunction, Hello to a Healthier You.",
-    "icon": Microscope
-  },
+    id: "wellness",
+    title: "Wellness Programs",
+    description: "These treatments aim to improve overall health, hydration, and vitality, contributing to a balanced lifestyle.",
+    icon: UserPlus,
+  }
 ];
