@@ -8,8 +8,7 @@ export const treatments = [
   {
     id: "aesthetic",
     title: "Medical Dermatology",
-    description: "T
-  Acne treatment
+    description: " Acne treatment
   Psoriasis management
   Eczema treatment
   Skin cancer screening and treatment
