@@ -14,17 +14,11 @@ export const treatments = [
   {
     id: "medical",
     title: "Medical Aesthetics",
-    description: "Botox and filler injections
-Chemical peels
-Microdermabrasion
-Laser hair removal
-Laser skin rejuvenation
-Microneedling
-Platelet-rich plasma therapy 
-Facial contouring
-Skin tightening treatments
-Medical-grade facial treatments E.g HydraFacial, customized facials",
-    icon: Syringe,
+    description: " { label: "PRP Therapy", href: "/services/obstetrics" },
+    { label: "Female Intimacy Rejuvination", href: "/services/gynecology" },
+    { label: "Medical Weight Loss", href: "/services/cosmetic" },
+    { label: "Laser Therapy", href: "/services/fertility" },
+    { label: "IV Infusions", href: "/services/wellness" }
   },
   {
     id: "wellness",
