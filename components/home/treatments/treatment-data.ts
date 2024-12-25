@@ -14,12 +14,8 @@ export const treatments = [
   {
     id: "medical",
     title: "Medical Aesthetics",
-    description: " { label: "PRP Therapy", href: "/services/obstetrics" },
-    { label: "Female Intimacy Rejuvination", href: "/services/gynecology" },
-    { label: "Medical Weight Loss", href: "/services/cosmetic" },
-    { label: "Laser Therapy", href: "/services/fertility" },
-    { label: "IV Infusions", href: "/services/wellness" }
-  },
+    description: "  "Botox and filler injections, Chemical peels, Microdermabrasion, Laser hair removal, Laser skin rejuvenation, Microneedling, Platelet-rich plasma (PRP) therapy, Facial contouring, Skin tightening treatments",
+    icon: Syringe,
   {
     id: "wellness",
     title: "Family Planning & Wellness",
