@@ -8,13 +8,32 @@ export const treatments = [
   {
     id: "aesthetic",
     title: "Medical Dermatology",
-    description: "These treatments focus on enhancing physical appearance by improving skin texture, tone, and overall beauty.",
+    description: "T
+  Acne treatment
+  Psoriasis management
+  Eczema treatment
+  Skin cancer screening and treatment
+  Rosacea treatment
+  Hyperpigmentation treatment
+  Hair loss treatment
+  Nail fungus treatment
+  Wart removal
+  Skin allergy testing and treatment.",
     icon: Sparkles,
   },
   {
     id: "medical",
     title: "Medical Aesthetics",
-    description: "These therapies address specific health or medical conditions, including skin regeneration and hormone management.",
+    description: "Botox and filler injections
+Chemical peels
+Microdermabrasion
+Laser hair removal
+Laser skin rejuvenation
+Microneedling
+Platelet-rich plasma therapy 
+Facial contouring
+Skin tightening treatments
+Medical-grade facial treatments E.g HydraFacial, customized facials",
     icon: Syringe,
   },
   {
