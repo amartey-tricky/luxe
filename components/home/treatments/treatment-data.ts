@@ -16,6 +16,7 @@ export const treatments = [
     title: "Medical Aesthetics",
     description: " Botox and filler injections, Chemical peels, Microdermabrasion, Laser hair removal, Laser skin rejuvenation, Microneedling, Platelet-rich plasma (PRP) therapy, Facial contouring, Skin tightening treatments",
     icon: Syringe,
+  },
   {
     id: "wellness",
     title: "Family Planning & Wellness",
