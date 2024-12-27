@@ -7,7 +7,7 @@ import {
 export const treatments = [
   {
     id: "aesthetic",
-    title: "Medical Dermatology",
+    title: "Dermatology",
     description: "Acne treatment, Psoriasis management, Eczema treatment, Skin cancer screening and treatment, Rosacea treatment, Hyperpigmentation treatment, Hair loss treatment, Nail fungus treatment, Wart removal, Skin allergy testing and treatment.",
     icon: Sparkles,
   },
