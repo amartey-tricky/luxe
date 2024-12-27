@@ -11,7 +11,13 @@ export default function Page() {
       <section className={styles.missionStatement}>
         <h2 className={styles.missionStatementTitle}>Our Mission</h2>
         <p className={styles.missionStatementDescription}>
-          At Luxe Clinic, we are dedicated to enhancing your natural beauty and well-being through advanced medical and aesthetic treatments. Our mission is to provide exceptional, personalized care that helps you look and feel your best at every stage of life.
+         TO PROVIDE QUALITY PERSONALIZED HOLISTIC, ETHICAL, SAFE AND PROFESSIONAL EVIDENCE -BASED MEDICAL SOLUTIONS FOR ALL, BUILDING CONFIDENCE AND EMPOWERMENT TO ALL, HEALING MIND BODY AND SOUL.
+        </p>
+      </section>
+         <section className={styles.missionStatement}>
+        <h2 className={styles.missionStatementTitle}>Our Vision</h2>
+        <p className={styles.missionStatementDescription}>
+         TO BE THE CLINIC OF CHOICE BY ALL STANDARDS WITH CONSISTENT LEVEL OF QUALITY SERVICES, TRANSFORMING LIVES THROUGH CONTINUOUS INNOVATIVE CLINICAL MODALITIES. TO BE THE VALUED PARTNER AND CREATORS OF POSITIVE CHANGE WITH GLOBAL RECOGNITION
         </p>
       </section>
       {/* Core Values */}
