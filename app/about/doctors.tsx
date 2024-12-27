@@ -25,7 +25,7 @@ const doctors = [
 export function Doctors() {
   return (
     <section>
-      <h2 className={styles.teamTitle}>Meet our Doctors</h2>
+      <h2 className={styles.teamTitle}>Meet our Staff</h2>
       <div className={styles.doctorsGrid}>
         {doctors.map((doctor) => (
           <article key={doctor.name} className={styles.doctorCard}>
