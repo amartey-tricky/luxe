@@ -11,7 +11,7 @@ export default function Page() {
       <section className={styles.missionStatement}>
         <h2 className={styles.missionStatementTitle}>Our Mission</h2>
         <p className={styles.missionStatementDescription}>
-         TO PROVIDE QUALITY PERSONALIZED HOLISTIC, ETHICAL, SAFE AND PROFESSIONAL EVIDENCE -BASED MEDICAL SOLUTIONS FOR ALL, BUILDING CONFIDENCE AND EMPOWERMENT TO ALL, HEALING MIND BODY AND SOUL.
+         TO PROVIDE QUALITY PERSONALIZED HOLISTIC, ETHICAL, SAFE AND PROFESSIONAL EVIDENCE-BASED MEDICAL SOLUTIONS FOR ALL, BUILDING CONFIDENCE AND EMPOWERMENT TO ALL, HEALING MIND BODY AND SOUL.
         </p>
       </section>
          <section className={styles.missionStatement}>
