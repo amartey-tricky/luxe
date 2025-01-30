@@ -20,6 +20,11 @@ const treatments = [
     name: 'Wart Removal Therapy',
     description: 'Effectively remove unwanted warts with our expert treatment. Our dermatologists use advanced technologies and personalized care to ensure quick, safe, and permanent removal.',
     icon: Leaf
+  },
+  {
+    name: 'Psoriasis Therapy',
+    description: 'Manage psoriasis symptoms and achieve healthier skin. Our expert dermatologists offer personalized treatment plans, including topical therapies, light treatments, and systemic medications, to reduce inflammation, slow skin cell growth, and prevent future flare-ups.',
+    icon: Droplet
   }
 ];
 
