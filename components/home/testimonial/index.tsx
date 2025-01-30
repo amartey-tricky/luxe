@@ -23,8 +23,8 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Facials & PRP Therapy Client",
-    role: "Gynecology Patient",
+    name: "Mathew",
+    role: "Facials & PRP Therapy Client",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150",
     content: "I highly recommend LUXE CLINIC to anyone looking for professional, personalized, and effective skincare solutions. They truly care about their clients and go above and beyond to deliver outstanding results.",
     rating: 5
