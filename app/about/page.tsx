@@ -37,7 +37,7 @@ export default function Page() {
           <article className={styles.valuesCard}>
             <Users className={styles.valueIcon} />
             <h3 className={styles.valueTitle}>Integrity</h3>
-            <p className={styles.ValueDescription}>We uphold the highest ethical standards, ensuring trust and transparency in all our practices.</p>
+            <p className={styles.valueDescription}>We uphold the highest ethical standards, ensuring trust and transparency in all our practices.</p>
           </article>
         </div>
       </section>
