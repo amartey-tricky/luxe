@@ -52,7 +52,7 @@ function HeroSection() {
             Revitalize Your <span className="text-green-600">Body and Mind</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Discover our range of wellness treatments designed to support overall health and vitality, helping you feel your best from the inside out.
+            Discover our range of dermatology treatments designed to support overall health and vitality, helping you feel your best from the inside out.
           </p>
           <motion.a
             href="#treatments"
@@ -85,7 +85,7 @@ function TreatmentsSection() {
   return (
     <section id="treatments" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Wellness Treatments</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Dermatology Treatments</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {treatments.map((treatment, index) => (
             <TreatmentCard key={index} treatment={treatment} index={index} />
@@ -140,7 +140,7 @@ function BenefitsSection() {
   return (
     <section className="py-20 bg-green-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Benefits of Our Wellness Treatments</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Benefits of Our Dermatology Treatments</h2>
         <div className="max-w-3xl mx-auto">
           {benefits.map((benefit, index) => (
             <motion.div
