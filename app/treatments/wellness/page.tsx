@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { ChevronDown, Droplet, Zap, Leaf } from 'lucide-react'
-import Link from 'next/link'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { ChevronDown, Droplet, Zap, Leaf } from 'lucide-react';
+import Link from 'next/link';
 
 const treatments = [
   {
@@ -23,7 +23,7 @@ const treatments = [
   },
   {
     name: 'Psoriasis Therapy',
-    description: 'Manage psoriasis symptoms and achieve healthier skin. Our expert dermatologists offer personalized treatment plans, including topical therapies, light treatments, and systemic medications, to reduce inflammation, slow skin cell growth, and prevent future flare-ups.',
+    description: 'Manage psoriasis symptoms and achieve healthier skin. Our expert dermatologists offer personalized treatment plans, including topical therapies, light treatments, and systemic medications.',
     icon: Droplet
   }
 ];
@@ -35,7 +35,7 @@ export default function WellnessPage() {
       <TreatmentsSection />
       <BenefitsSection />
     </main>
-  )
+  );
 }
 
 function HeroSection() {
@@ -78,7 +78,7 @@ function HeroSection() {
         <ChevronDown className="w-8 h-8 text-green-600" />
       </motion.div>
     </section>
-  )
+  );
 }
 
 function TreatmentsSection() {
@@ -93,11 +93,11 @@ function TreatmentsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], index: number }) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -110,22 +110,22 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link href={`/treatments/wellness/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
-      <div className="p-6">
-        <div className="flex justify-center mb-4">
-          <motion.div
-            animate={{ rotate: isHovered ? 360 : 0 }}
-            transition={{ duration: 0.5 }}
-            className="rounded-full bg-green-100 p-4"
-          >
-            <treatment.icon className="w-8 h-8 text-green-600" />
-          </motion.div>
+        <div className="p-6">
+          <div className="flex justify-center mb-4">
+            <motion.div
+              animate={{ rotate: isHovered ? 360 : 0 }}
+              transition={{ duration: 0.5 }}
+              className="rounded-full bg-green-100 p-4"
+            >
+              <treatment.icon className="w-8 h-8 text-green-600" />
+            </motion.div>
+          </div>
+          <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">{treatment.name}</h3>
+          <p className="text-gray-600 text-center">{treatment.description}</p>
         </div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">{treatment.name}</h3>
-        <p className="text-gray-600 text-center">{treatment.description}</p>
-      </div>
       </Link>
     </motion.div>
-  )
+  );
 }
 
 function BenefitsSection() {
@@ -135,7 +135,7 @@ function BenefitsSection() {
     "Faster recovery and tissue repair",
     "Pain relief and management",
     "Support for overall well-being and balance"
-  ]
+  ];
 
   return (
     <section className="py-20 bg-green-50">
@@ -159,5 +159,5 @@ function BenefitsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
