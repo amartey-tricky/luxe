@@ -11,13 +11,13 @@ export default function Page() {
       <section className={styles.missionStatement}>
         <h2 className={styles.missionStatementTitle}>Our Mission</h2>
         <p className={styles.missionStatementDescription}>
-         TO PROVIDE QUALITY PERSONALIZED HOLISTIC, ETHICAL, SAFE AND PROFESSIONAL EVIDENCE-BASED MEDICAL SOLUTIONS FOR ALL, BUILDING CONFIDENCE AND EMPOWERMENT TO ALL, HEALING MIND BODY AND SOUL.
+         To provide quality personalized holistic, ethical, safe and professional evidence-based medical solutions for all, building confidence and empowerment to all, healing mind body and soul.
         </p>
       </section>
          <section className={styles.missionStatement}>
         <h2 className={styles.missionStatementTitle}>Our Vision</h2>
         <p className={styles.missionStatementDescription}>
-         TO BE THE CLINIC OF CHOICE BY ALL STANDARDS WITH CONSISTENT LEVEL OF QUALITY SERVICES, TRANSFORMING LIVES THROUGH CONTINUOUS INNOVATIVE CLINICAL MODALITIES. TO BE THE VALUED PARTNER AND CREATORS OF POSITIVE CHANGE WITH GLOBAL RECOGNITION
+         To be the clinic of choice by all standards with consistent level of quality services, transforming lives through continuous innovative clinical modalities. To be the valued partner and creators of positive change with global recognition
         </p>
       </section>
       {/* Core Values */}
