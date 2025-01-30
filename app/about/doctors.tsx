@@ -6,13 +6,13 @@ const doctors = [
     name: "Dr. Patience M. Konona-Ang",
     image: "",
     title: "Founder & Lead Physician",
-    description: "Description goes here"
+    description: "Dr.Konona-Ang boasts an impressive credentials portfolio, featuring a fellowship in Aesthetic Medicine and Nano Fat Grafting from the Swiss Academy of Cosmetic Dermatology and Aesthetic Medicine (SACDAM) and a certification in Aesthetic Medicine from the North American Board of Anti-Aging Medicine (NABAM), underscoring her commitment to delivering exceptional patient care."
   },
   {
-    name: "Dr. Jane Doe",
+    name: "Umar Ali Mohammed",
     image: "",
-    title: "Obstetrician & Gynecologist",
-    description: "Description goes here"
+    title: "Nurse",
+    description: ""
   },
   {
     name: "Dr. Abu Bakr",
