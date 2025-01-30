@@ -7,14 +7,19 @@ import Link from 'next/link'
 
 const treatments = [
   {
-    name: 'IV Infusion Therapy',
-    description: 'Delivers essential vitamins, minerals, and fluids directly into the bloodstream, enhancing energy, hydration, and overall well-being.',
+    name: 'Acne Therapy',
+    description: 'Clear, radiant skin is within reach. Our expert acne treatments combine cutting-edge technology and personalized care to target acne-causing bacteria, reduce inflammation, and prevent future breakouts.',
     icon: Droplet
   },
   {
-    name: 'Laser Therapy',
-    description: 'Provides therapeutic benefits such as pain relief and tissue repair, often used in dermatology and physical rehabilitation.',
+    name: 'Eczema Therapy',
+    description: 'Say goodbye to eczema discomfort! Our customized therapy uses cutting-edge technologies and natural remedies to reduce inflammation, repair skin barriers, and prevent future flare-ups.',
     icon: Zap
+  }
+  {
+    name: 'Eczema Therapy',
+    description: 'Effectively remove unwanted warts with our expert treatment. Our dermatologists use advanced technologies and personalized care to ensure quick, safe, and permanent removal.',
+    icon: Leaf
   }
 ]
 
