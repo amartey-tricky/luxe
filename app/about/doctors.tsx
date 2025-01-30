@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 
 const doctors = [
   {
-    name: "Dr. John Doe",
+    name: "Dr. Patience M. Konona-Ang",
     image: "",
     title: "Founder & Lead Physician",
     description: "Description goes here"
