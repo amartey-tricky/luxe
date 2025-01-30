@@ -15,13 +15,13 @@ const treatments = [
     name: 'Eczema Therapy',
     description: 'Say goodbye to eczema discomfort! Our customized therapy uses cutting-edge technologies and natural remedies to reduce inflammation, repair skin barriers, and prevent future flare-ups.',
     icon: Zap
-  }
+  },
   {
-    name: 'Eczema Therapy',
+    name: 'Wart Removal Therapy',
     description: 'Effectively remove unwanted warts with our expert treatment. Our dermatologists use advanced technologies and personalized care to ensure quick, safe, and permanent removal.',
     icon: Leaf
   }
-]
+];
 
 export default function WellnessPage() {
   return (
