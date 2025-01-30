@@ -6,8 +6,8 @@ export const services = [
     title: "Dermatology",
     description: "These treatments aim to improve overall health, hydration, and vitality, contributing to a balanced lifestyle.",
     treatments: [
-      "• ",
-      "• Laser Therapy",
+      "• Acne Treatment",
+      "• Eczema Treatment",
     ],
     link: "/treatments/wellness",
     cta: "Learn More"
