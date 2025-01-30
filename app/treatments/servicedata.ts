@@ -1,6 +1,17 @@
 import { Sparkles, Syringe, UserPlus } from "lucide-react";
 
 export const services = [
+   {
+    icon: UserPlus,
+    title: "Dermatology",
+    description: "These treatments aim to improve overall health, hydration, and vitality, contributing to a balanced lifestyle.",
+    treatments: [
+      "• ",
+      "• Laser Therapy",
+    ],
+    link: "/treatments/wellness",
+    cta: "Learn More"
+  }
   {
     icon: Sparkles,
     title: "Aesthetic Treatments",
@@ -23,15 +34,5 @@ export const services = [
     link: "/treatments/medical",
     cta: "Schedule a Consultation"
   },
-  {
-    icon: UserPlus,
-    title: "Wellness Programs",
-    description: "These treatments aim to improve overall health, hydration, and vitality, contributing to a balanced lifestyle.",
-    treatments: [
-      "• IV Infusion Therapy",
-      "• Laser Therapy",
-    ],
-    link: "/treatments/wellness",
-    cta: "Learn More"
-  }
+ 
 ]
