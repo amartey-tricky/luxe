@@ -130,11 +130,11 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
 
 function BenefitsSection() {
   const benefits = [
-    "Improved energy levels and vitality",
-    "Enhanced hydration and nutrient absorption",
-    "Faster recovery and tissue repair",
-    "Pain relief and management",
-    "Support for overall well-being and balance"
+    "Boosts self-confidence and self-esteem through improved skin.",
+    "Provides long-term results for healthy, glowing skin.",
+    "Enhances appearance by reducing fine lines, wrinkles, and age spots.",
+    "Improves skin health and reduces symptoms of skin conditions.",
+    "Prevents skin cancer by identifying and removing precancerous lesions."
   ];
 
   return (
