@@ -23,7 +23,7 @@ export function HeroImage() {
         />
         <div className={styles.imageBadge}>
           <span className="font-semibold">Trusted by</span>
-          <span className="text-2xl font-bold">10,000+</span>
+          <span className="text-2xl font-bold">100+</span>
           <span>Patients</span>
         </div>
       </div>
