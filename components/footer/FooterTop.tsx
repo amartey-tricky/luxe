@@ -6,8 +6,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "0302 980 050",
-    href: "tel:+2333029880050"
+    value: "0303 980 050",
+    href: "tel:+2333039880050"
   },
   {
     icon: Mail,
@@ -19,7 +19,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Kalpohini Estates, Tamale, Ghana",
-    href: "https://maps.app.goo.gl/Z9SHcp2LWyrCT4X96"
+    href: "https://maps.app.goo.gl/Z88H5NvbpMQjxeMw7?g_st=com.google.maps.preview.copy"
   },
   {
     icon: Clock,
