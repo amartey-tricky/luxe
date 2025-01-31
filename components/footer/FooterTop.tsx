@@ -11,7 +11,7 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    label: "Whatsapp"
+    label: "Whatsapp",
     value: "0303 980 050",
     href: "https://wa.me/233303980050"
   },
