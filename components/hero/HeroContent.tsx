@@ -40,11 +40,11 @@ export function HeroContent() {
       </div>
       <div className={styles.statsContainer}>
         <div className={styles.statItem}>
-          <span className={styles.statNumber}>15+</span>
+          <span className={styles.statNumber}>1+</span>
           <span className={styles.statLabel}>Years Experience</span>
         </div>
         <div className={styles.statItem}>
-          <span className={styles.statNumber}>10k+</span>
+          <span className={styles.statNumber}>100+</span>
           <span className={styles.statLabel}>Happy Patients</span>
         </div>
         <div className={styles.statItem}>
