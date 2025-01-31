@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Star } from 'lucide-react';
+import { Star, UserPlus} from 'lucide-react';
 import styles from './styles.module.css';
+
 
 const testimonials = [
   {
     id: 1,
     name: "Med",
     role: "Aesthetic Therapy Client",
-    image: "user_1077114.png",
+    icon: "UserPlus",
     content: "The care and attention I received were exceptional. The results exceeded my expectations, and the staff made me feel comfortable throughout the entire process.",
     rating: 5
   },
@@ -17,7 +18,7 @@ const testimonials = [
     id: 2,
     name: "Jemimah",
     role: "Laser Therapy Client",
-    image: "user_1077114.png",
+    icon: "UserPlus",
     content: "I'm absolutely thrilled with the exceptional service I received at Luxe Clinic Ghana! The staff were warm, welcoming, and extremely professional. After detailed consultations with them, a personalized treatment plan was made for me. Really glad I bumped into them",
     rating: 5
   },
@@ -25,7 +26,7 @@ const testimonials = [
     id: 3,
     name: "Mathew",
     role: "Facials & PRP Therapy Client",
-    image: "user_1077114.png",
+   icon: "UserPlus",
     content: "I highly recommend LUXE CLINIC to anyone looking for professional, personalized, and effective skincare solutions. They truly care about their clients and go above and beyond to deliver outstanding results.",
     rating: 5
   }
