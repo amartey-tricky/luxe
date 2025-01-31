@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Evans",
+    name: "Jemimah",
     role: "Laser Therapy Client",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
     content: "I'm absolutely thrilled with the exceptional service I received at Luxe Clinic Ghana! The staff were warm, welcoming, and extremely professional. After detailed consultations with them, a personalized treatment plan was made for me. Really glad I bumped into them",
