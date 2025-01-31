@@ -71,6 +71,11 @@
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
 }
 
+.appointmentButton {
+  display: flex;
+  align-items: center;
+}
+
 .menuButton {
   transition: transform 0.2s ease-in-out;
 }
