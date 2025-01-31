@@ -2,14 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Star, CircleUserRound } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
-import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
-
 import styles from './styles.module.css';
 import { useRef } from 'react';
-
-SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const testimonials = [
   {
@@ -39,6 +33,21 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const containerRef = useRef(null);
+  const sliderRef = useRef(null);
+
+  const slide = (direction) => {
+    const slider = sliderRef.current;
+    const container = containerRef.current;
+    const scrollAmount = container.offsetWidth;
+
+    if (direction === 'left') {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className={styles.section}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -57,26 +66,16 @@ export function Testimonials() {
           </p>
         </motion.div>
 
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          className={styles.sliderContainer}
-        >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
+        <div className={styles.sliderContainer} ref={containerRef}>
+          <button onClick={() => slide('left')}>Left</button>
+          <div className={styles.slider} ref={sliderRef}>
+            {testimonials.map((testimonial, index) => (
               <motion.div
+                key={testimonial.id}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
                 className={styles.testimonialCard}
               >
                 <div className={styles.rating}>
@@ -93,9 +92,10 @@ export function Testimonials() {
                   </div>
                 </div>
               </motion.div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+          <button onClick={() => slide('right')}>Right</button>
+        </div>
       </div>
     </section>
   );
