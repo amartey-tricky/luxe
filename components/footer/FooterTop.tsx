@@ -46,6 +46,16 @@ export function FooterTop() {
             href={item.href}
             className={styles.contactItem}
           >
+            .footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contactItem {
+  flex: 1 1 20%; /* Adjust the percentage based on your design */
+  margin: 10px;
+}
             <div className={styles.iconWrapper}>
               <Icon className={styles.icon} />
             </div>
