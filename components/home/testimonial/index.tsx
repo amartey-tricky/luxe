@@ -1,16 +1,15 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Star, UserPlus} from 'lucide-react';
+import { Star, UserPlus } from 'lucide-react';
 import styles from './styles.module.css';
-
 
 const testimonials = [
   {
     id: 1,
     name: "Med",
     role: "Aesthetic Therapy Client",
-    icon: "UserPlus",
+    icon: UserPlus,
     content: "The care and attention I received were exceptional. The results exceeded my expectations, and the staff made me feel comfortable throughout the entire process.",
     rating: 5
   },
@@ -18,15 +17,15 @@ const testimonials = [
     id: 2,
     name: "Jemimah",
     role: "Laser Therapy Client",
-    icon: "UserPlus",
-    content: "I'm absolutely thrilled with the exceptional service I received at Luxe Clinic Ghana! The staff were warm, welcoming, and extremely professional. After detailed consultations with them, a personalized treatment plan was made for me. Really glad I bumped into them",
+    icon: UserPlus,
+    content: "I'm absolutely thrilled with the exceptional service I received at Luxe Clinic Ghana! The staff were warm, welcoming, and extremely professional. After detailed consultations with them, they provided tailored solutions that exceeded my expectations.",
     rating: 5
   },
   {
     id: 3,
     name: "Mathew",
     role: "Facials & PRP Therapy Client",
-   icon: "UserPlus",
+    icon: UserPlus,
     content: "I highly recommend LUXE CLINIC to anyone looking for professional, personalized, and effective skincare solutions. They truly care about their clients and go above and beyond to deliver outstanding results.",
     rating: 5
   }
@@ -68,11 +67,7 @@ export function Testimonials() {
               </div>
               <p className={styles.content}>{testimonial.content}</p>
               <div className={styles.author}>
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className={styles.avatar}
-                />
+                <testimonial.icon className={styles.avatar} />
                 <div>
                   <h4 className={styles.name}>{testimonial.name}</h4>
                   <p className={styles.role}>{testimonial.role}</p>
