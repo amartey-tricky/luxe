@@ -4,7 +4,7 @@
 
 /* Footer Top Styles */
 .footerTop {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16;
  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
