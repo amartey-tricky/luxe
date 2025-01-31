@@ -1,54 +1,105 @@
 .section {
-  @apply bg-gradient-to-b from-gray-50 to-white relative overflow-hidden;
+  /* your existing styles */
 }
 
-.title {
-  @apply text-3xl md:text-4xl font-bold mb-4;
+.sliderContainer {
+  overflow: hidden;
+  width: 100%;
 }
 
-.gradientText {
-  @apply inline-block;
-  background: linear-gradient(135deg, #E1A7E2 0%, #9C52E5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.subtitle {
-  @apply text-gray-600 text-lg max-w-2xl mx-auto;
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .testimonialCard {
-  @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300
-         border border-gray-100;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  /* your existing styles */
 }
 
-.rating {
-  @apply flex gap-1 mb-4;
+@media (min-width: 768px) {
+  .testimonialCard {
+    min-width: 50%;
+  }
 }
 
-.star {
-  @apply w-5 h-5 text-yellow-400;
+@media (min-width: 1024px) {
+  .testimonialCard {
+    min-width: 33.33%;
+  }
 }
 
-.content {
-  @apply text-gray-600 text-sm leading-relaxed mb-6;
+
+import { useRef } from 'react';
+
+export function Testimonials() {
+  const containerRef = useRef(null);
+  const sliderRef = useRef(null);
+
+  const slide = (direction) => {
+    const slider = sliderRef.current;
+    const container = containerRef.current;
+    const scrollAmount = container.offsetWidth;
+
+    if (direction === 'left') {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className={styles.section}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className={styles.title}>
+            What Our <span className={styles.gradientText}>Patients Say</span>
+          </h2>
+          <p className={styles.subtitle}>
+            Real experiences from our valued patients
+          </p>
+        </motion.div>
+
+        <div className={styles.sliderContainer} ref={containerRef}>
+          <button onClick={() => slide('left')}>Left</button>
+          <div className={styles.slider} ref={sliderRef}>
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.id}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className={styles.testimonialCard}
+              >
+                <div className={styles.rating}>
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className={styles.star} fill="currentColor" />
+                  ))}
+                </div>
+                <p className={styles.content}>{testimonial.content}</p>
+                <div className={styles.author}>
+                  <testimonial.icon className={styles.avatar} />
+                  <div>
+                    <h4 className={styles.name}>{testimonial.name}</h4>
+                    <p className={styles.role}>{testimonial.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <button onClick={() => slide('right')}>Right</button>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-.author {
-  @apply flex items-center gap-4;
-}
-
-.avatar {
-  @apply w-12 h-12 rounded-full object-cover;
-}
-
-.name {
-  @apply font-semibold text-gray-800;
-}
-
-.role {
-  @apply text-sm text-gray-500;
-}
