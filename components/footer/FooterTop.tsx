@@ -26,12 +26,6 @@ const contactInfo = [
     label: "Location",
     value: "Kalpohini Estates, Tamale, Ghana",
     href: "https://maps.app.goo.gl/Z88H5NvbpMQjxeMw7?g_st=com.google.maps.preview.copy"
-  },
-  {
-    icon: Clock,
-    label: "Working Hours",
-    value: "Mon-Fri: 8AM-7PM",
-    href: "/contact"
   }
 ];
 
