@@ -5,15 +5,14 @@
 /* Footer Top Styles */
 .footerTop {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16;
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .contactItem {
-  flex: 1 1 20%; /* Adjust the percentage based on your design */
+  flex: 1 1 18%; /* Adjusted percentage to fit 5 items in one line */
   margin: 10px;
-}
 }
 
 .contactItem {
