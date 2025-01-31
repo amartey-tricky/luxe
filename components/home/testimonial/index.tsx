@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Star, CircleUserRound } from 'lucide-react';
 import styles from './styles.module.css';
+import { useRef } from 'react';
 
 const testimonials = [
   {
@@ -32,6 +33,8 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const containerRef = useRef(null);
+
   return (
     <section className={styles.section}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -50,31 +53,33 @@ export function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className={styles.testimonialCard}
-            >
-              <div className={styles.rating}>
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className={styles.star} fill="currentColor" />
-                ))}
-              </div>
-              <p className={styles.content}>{testimonial.content}</p>
-              <div className={styles.author}>
-                <testimonial.icon className={styles.avatar} />
-                <div>
-                  <h4 className={styles.name}>{testimonial.name}</h4>
-                  <p className={styles.role}>{testimonial.role}</p>
+        <div className={styles.sliderContainer} ref={containerRef}>
+          <div className={styles.slider}>
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={testimonial.id}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className={styles.testimonialCard}
+              >
+                <div className={styles.rating}>
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className={styles.star} fill="currentColor" />
+                  ))}
                 </div>
-              </div>
-            </motion.div>
-          ))}
+                <p className={styles.content}>{testimonial.content}</p>
+                <div className={styles.author}>
+                  <testimonial.icon className={styles.avatar} />
+                  <div>
+                    <h4 className={styles.name}>{testimonial.name}</h4>
+                    <p className={styles.role}>{testimonial.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
