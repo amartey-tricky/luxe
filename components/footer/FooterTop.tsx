@@ -6,13 +6,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "0303 980 050",
+    value: "0303 980 050",
     href: "tel:+2333039880050"
   },
   {
     icon: Whatsapp,
     label: "Whatsapp",
-    value: "0303 980 050",
+    value: "0303 980 050",
     href: "https://wa.me/233303980050"
   },
   {
@@ -46,16 +46,6 @@ export function FooterTop() {
             href={item.href}
             className={styles.contactItem}
           >
-            .footerTop {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contactItem {
-  flex: 1 1 20%; /* Adjust the percentage based on your design */
-  margin: 10px;
-}
             <div className={styles.iconWrapper}>
               <Icon className={styles.icon} />
             </div>
