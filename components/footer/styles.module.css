@@ -5,7 +5,7 @@
 /* Footer Top Styles */
 .footerTop {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16;
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -13,9 +13,6 @@
 .contactItem {
   flex: 1 1 18%; /* Adjusted percentage to fit 5 items in one line */
   margin: 10px;
-}
-
-.contactItem {
   @apply flex items-center space-x-4 p-4 rounded-lg bg-white shadow-sm hover:shadow-md
          transition-all duration-300 transform hover:-translate-y-1;
 }
