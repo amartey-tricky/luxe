@@ -10,7 +10,8 @@ const contactInfo = [
     href: "tel:+2333039880050"
   },
   {
-    icon: Phone
+    icon: Phone,
+    label: "Whatsapp"
     value: "0303 980 050",
     href: "https://wa.me/233303980050"
   },
