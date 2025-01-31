@@ -1,14 +1,9 @@
 .section {
+  /* your existing styles */
 }
 
 .sliderContainer {
-  overflow: hidden;
   width: 100%;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
 }
 
 .testimonialCard {
