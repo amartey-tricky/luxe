@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircleMore } from 'lucide-react';
 import Link from 'next/link';
 import styles from './styles.module.css';
 
@@ -10,7 +10,7 @@ const contactInfo = [
     href: "tel:+2333039880050"
   },
   {
-    icon: Phone,
+    icon: MessageCircleMore,
     label: "Whatsapp",
     value: "0303 980 050",
     href: "https://wa.me/233303980050"
