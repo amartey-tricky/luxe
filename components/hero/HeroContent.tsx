@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -22,8 +23,10 @@ export function HeroContent() {
       </p>
       <div className={styles.buttonGroup}>
         <Button size="lg" className={styles.primaryButton}>
+          <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
           <Calendar className="mr-2 h-5 w-5" />
           Book Consultation
+          </Link>
         </Button>
         <Button 
           size="lg" 
