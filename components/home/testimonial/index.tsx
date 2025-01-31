@@ -34,6 +34,19 @@ const testimonials = [
 
 export function Testimonials() {
   const containerRef = useRef(null);
+  const sliderRef = useRef(null);
+
+  const slide = (direction) => {
+    const slider = sliderRef.current;
+    const container = containerRef.current;
+    const scrollAmount = container.offsetWidth;
+
+    if (direction === 'left') {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className={styles.section}>
@@ -54,7 +67,8 @@ export function Testimonials() {
         </motion.div>
 
         <div className={styles.sliderContainer} ref={containerRef}>
-          <div className={styles.slider}>
+          <button onClick={() => slide('left')}>Left</button>
+          <div className={styles.slider} ref={sliderRef}>
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}
@@ -80,6 +94,7 @@ export function Testimonials() {
               </motion.div>
             ))}
           </div>
+          <button onClick={() => slide('right')}>Right</button>
         </div>
       </div>
     </section>
