@@ -29,7 +29,7 @@ export default function Page() {
                 <div className={styles.contactInfoText}>
                   <h3 className={styles.contactInfoTitle}>Phone</h3>
                   <p className={styles.contactInfoDescription}>
-                    0302 980 050
+                    0303 980 050
                   </p>
                 </div>
               </article>
