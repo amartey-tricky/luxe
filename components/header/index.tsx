@@ -55,15 +55,15 @@ export function Header() {
           {/* Right Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <NavigationMenu items={rightNavItems} />
-            <Button
-              size="lg"
-              className={styles.appointmentButton}
-            >
-              <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
-              <Calendar className="mr-2 h-4 w-4" />
-              Book Appointment
-              </Link>
-            </Button>
+            <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
+              <Button
+                size="lg"
+                className={styles.appointmentButton}
+              >
+                <Calendar className="mr-2 h-4 w-4" />
+                Book Appointment
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
