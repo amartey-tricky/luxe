@@ -34,8 +34,8 @@ export const treatmentData: TreatmentProps[] = [
   },
   {
     id: 2,
-    name: 'Laser Therapy',
-    slug: 'laser-therapy',
+    name: 'Eczema Therapy',
+    slug: 'eczema-therapy',
     description: 'Provides therapeutic benefits such as pain relief and tissue repair, often used in dermatology and physical rehabilitation.',
     icon: Zap,
     fullDescription: 'Laser Therapy is a cutting-edge medical treatment that uses focused light energy to stimulate healing, reduce inflammation, and promote tissue regeneration. This non-invasive approach can be applied to various medical and cosmetic conditions, offering precise and effective treatment with minimal discomfort.',
