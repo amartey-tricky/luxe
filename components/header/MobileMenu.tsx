@@ -35,12 +35,12 @@ export function MobileMenu({ isOpen, navItems }: MobileMenuProps) {
             {item.label}
           </Link>
         ))}
-        <Button className="w-full mt-4" size="lg">
-          <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
-          <Calendar className="mr-2 h-4 w-4" />
-          Book Appointment
-          </Link>
-        </Button>
+        <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
+          <Button className="w-full mt-4" size="lg"
+            <Calendar className="mr-2 h-4 w-4" />
+            Book Appointment
+          </Button>
+        </Link>
       </div>
     </div>
   );
