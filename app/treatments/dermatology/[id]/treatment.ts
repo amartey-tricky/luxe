@@ -1,4 +1,4 @@
-import { LucideIcon, Droplet, Zap } from "lucide-react";
+import { LucideIcon, Droplet, Zap, Slice, LifeBuoy } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export interface TreatmentProps {
@@ -88,6 +88,41 @@ export const treatmentData: TreatmentProps[] = [
       'Quick recovery time'
     ],
     procedure: 'Our Psoriasis Therapy procedure begins with an initial consultation to discuss treatment options and develop a personalized plan. Our experienced practitioners will assess the severity of the condition and recommend the best course of action.',
+    image: '/images/laser-therapy.jpg'
+  }
+    {
+    id: 5,
+    name: 'DPN Therapy',
+    slug: 'dpn-therapy',
+    description: 'Dermatological Procedures for Nevus and Other Lesions (DPN) involves minor surgical procedures to remove unwanted skin growths, such as skin tags, moles, warts, and seborrheic keratoses, improving skin appearance and health.',
+    icon: Slice,
+    fullDescription: 'Dermatological Procedures for Nevus and Other Lesions (DPN) is a specialized treatment approach focused on safely and effectively removing unwanted skin growths, such as skin tags, moles, warts, and seborrheic keratoses. By removing these growths, individuals can achieve smoother, more even-toned skin and alleviate concerns about their appearance. DPN procedures are quick, painless, and performed in-office, with minimal downtime, involving local anesthesia and specialized instruments to carefully remove unwanted growths, reducing the risk of skin cancer, irritation, inflammation, or infection.',
+    benefits: [
+      "Improved appearance through removal of unwanted skin growths.",
+      "Reduced risk of skin cancer by removing potentially cancerous lesions.", 
+      "Relief from discomfort, irritation, or inflammation caused by skin growths.",
+      "Prevention of infection, inflammation, or other complications.",
+      "Boosted confidence and self-esteem through improved skin appearance."
+    ],
+    procedure: 'The DPN procedure typically begins with a thorough examination of the skin growths to determine the best course of treatment. A local anesthetic may be administered to ensure comfort during the procedure. The unwanted growths are then carefully removed using specialized instruments, such as scalpel, cryotherapy, or laser technology. The treated area is cleaned and dressed to promote healing. The entire procedure is usually quick, taking only a few minutes to an hour to complete.',
+    image: '/images/laser-therapy.jpg'
+  },
+    {
+    id: 6,
+    name: 'General Dermatology Treatments',
+    slug: 'general-dermatology-treatments',
+    description: 'General dermatology treatments address various skin concerns, including acne, psoriasis, eczema, and skin allergies. Treatments may include topical creams, oral medications, and procedures like chemical peels and laser therapy.',
+    icon: LifeBuoy,
+    fullDescription: 'General dermatology treatments encompass a wide range of therapies and procedures aimed at addressing various skin concerns not limited to specific treatments mentioned earlier. This comprehensive approach includes treatments for acne, psoriasis, eczema, skin allergies, and other conditions, utilizing topical creams, oral medications, and procedures like chemical peels, microdermabrasion, and laser therapy. General dermatology treatments may also involve skin checks, biopsies, and guidance on skincare routines, sun protection, and prevention of skin diseases.',
+    benefits: [
+      'Improved skin health and appearance.',
+      'Effective management of skin conditions such as acne, psoriasis, and ecoriasis.',
+      'Prevention of skin diseases and skin cancer through early detection and treatment.',
+      'Personalized guidance on skincare routines and sun protection.',
+      'Enhanced overall well-being and self-confidence through healthy and radiant skin.'
+    
+    ],
+    procedure: 'A general dermatology procedure typically begins with a thorough examination of the skin to diagnose the condition and determine the best course of treatment. Based on the diagnosis, the dermatologist may prescribe topical or oral medications, recommend lifestyle changes, or perform procedures such as biopsies, chemical peels, or laser therapy. The dermatologist will provide personalized guidance on skincare routines, sun protection, and prevention of skin diseases to help manage the condition and achieve optimal skin health.',
     image: '/images/laser-therapy.jpg'
   }
 ];
