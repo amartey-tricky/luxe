@@ -105,7 +105,7 @@ export const treatmentData: TreatmentProps[] = [
       "Boosted confidence and self-esteem through improved skin appearance."
     ],
     procedure: 'The DPN procedure typically begins with a thorough examination of the skin growths to determine the best course of treatment. A local anesthetic may be administered to ensure comfort during the procedure. The unwanted growths are then carefully removed using specialized instruments, such as scalpel, cryotherapy, or laser technology. The treated area is cleaned and dressed to promote healing. The entire procedure is usually quick, taking only a few minutes to an hour to complete.',
-    image: 'luxe-treatments/des1hmoulaj9swi9xupt'
+    image: 'https://res.cloudinary.com/da9sofcno/image/upload/v1738502017/luxe-treatments/des1hmoulaj9swi9xupt.png'
   },
   {
     id: 6,
