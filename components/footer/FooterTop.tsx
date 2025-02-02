@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Kalpohini Estates, Tamale, Ghana",
+    value: "Kalpohin Estates, Tamale, Ghana",
     href: "https://maps.app.goo.gl/Z88H5NvbpMQjxeMw7?g_st=com.google.maps.preview.copy"
   }
 ];
