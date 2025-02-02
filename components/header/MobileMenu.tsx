@@ -35,7 +35,7 @@ export function MobileMenu({ isOpen, navItems }: MobileMenuProps) {
             {item.label}
           </Link>
         ))}
-        <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
+        <Link href="https://forms.gle/C5idmfezqW6vsp2FA">
           <Button className="w-full mt-4" size="lg">
             <Calendar className="mr-2 h-4 w-4" />
             Book Appointment
