@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Droplet, Zap, Leaf, Slice } from 'lucide-react';
+import { ChevronDown, Droplet, Zap, Leaf, Slice, LifeBuoy } from 'lucide-react';
 import Link from 'next/link';
 
 const treatments = [
@@ -34,7 +34,7 @@ const treatments = [
   {
     name: 'General Dermatology Treatment',
     description: 'General dermatology treatments address various skin concerns, including acne, psoriasis, eczema, and skin allergies. Treatments may include topical creams, oral medications, and procedures like chemical peels and laser therapy.',
-    icon: Slice
+    icon: LifeBuoy
   }
   
 ];
