@@ -6,7 +6,7 @@ import {
 
 export const treatments = [
   {
-    id: "wellness",
+    id: "dermatology",
     title: "Dermatology",
     description: "At Luxe, our board-certified dermatologists provide comprehensive care for all skin types and concerns. From routine check-ups and skin exams to advanced treatments for complex conditions, we're dedicated to delivering exceptional dermatological care. Our state-of-the-art facilities and cutting-edge technologies ensure accurate diagnoses and effective treatments, helping you achieve the healthy, radiant skin you deserve.",
     icon: UserPlus,
