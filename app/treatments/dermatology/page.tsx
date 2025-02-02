@@ -32,7 +32,7 @@ const treatments = [
     icon: Slice
   },
   {
-    name: 'General Dermatology Treatment',
+    name: 'General Dermatology Treatments',
     description: 'General dermatology treatments address various skin concerns, including acne, psoriasis, eczema, and skin allergies. Treatments may include topical creams, oral medications, and procedures like chemical peels and laser therapy.',
     icon: LifeBuoy
   }
