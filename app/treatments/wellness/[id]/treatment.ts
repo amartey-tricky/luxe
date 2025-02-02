@@ -87,10 +87,10 @@ export const treatmentData: TreatmentProps[] = [
       'Enhances quality of life and overall well-being',
       'Quick recovery time'
     ],
-    procedure: 'Our Psoriasis Therapy procedure begins with an initial consultation to discuss treatment options and develop a personalized plan. Our experienced practitioners will assess the severity of the psoriasis and recommend the most effective treatment approach.',
+    procedure: 'Our Psoriasis Therapy procedure begins with an initial consultation to discuss treatment options and develop a personalized plan. Our experienced practitioners will assess the severity of the condition and recommend the best course of action.',
     image: '/images/laser-therapy.jpg'
   }
-]
+];
 
 export function getTreatmentBySlug(slug: string): TreatmentProps {
   const treatment = treatmentData.find((t) => t.slug === slug);
@@ -105,5 +105,5 @@ export function getTreatmentBySlug(slug: string): TreatmentProps {
 export function getAllTreatmentSlugs(): { slug: string }[] {
   return treatmentData.map((treatment) => ({
     slug: treatment.slug
-  }))
+  }));
 }
