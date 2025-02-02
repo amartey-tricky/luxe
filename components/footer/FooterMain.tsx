@@ -4,15 +4,13 @@ import styles from './styles.module.css';
 
 const footerLinks = {
   services: [
-    { label: "PRP Therapy", href: "/services/obstetrics" },
-    { label: "Female Intimacy Rejuvination", href: "/services/gynecology" },
-    { label: "Medical Weight Loss", href: "/services/cosmetic" },
-    { label: "Laser Therapy", href: "/services/fertility" },
-    { label: "IV Infusions", href: "/services/wellness" }
+    { label: "Dermatology", href: "/treatments/dermatology" },
+    { label: "Aesthetic Treatment", href: "/treatments/aesthetic" },
+    { label: "Medical Treatment", href: "/treatments/medical" },
   ],
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Our Staff", href: "/doctors" },
+    { label: "Our Staff", href: "/about#staff" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" }
   ],
