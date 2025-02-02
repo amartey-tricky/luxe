@@ -9,7 +9,7 @@ export const services = [
       "• Acne Treatment",
       "• Eczema Treatment",
     ],
-    link: "/treatments/wellness",
+    link: "/treatments/dermatology",
     cta: "Learn More"
   },
   {

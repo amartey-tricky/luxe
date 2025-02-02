@@ -109,7 +109,7 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link href={`/treatments/wellness/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+      <Link href={`/treatments/dermatology/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
         <div className="p-6">
           <div className="flex justify-center mb-4">
             <motion.div
