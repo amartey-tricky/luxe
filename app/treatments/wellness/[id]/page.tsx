@@ -21,9 +21,9 @@ export default async function TreatmentPage({
   return (
     <main className={styles.main}>
       <div className={styles.main_container}>
-        <Link href="/treatments/aesthetic" className={styles.back_button}>
+        <Link href="/treatments/wellness" className={styles.back_button}>
           <ArrowLeft className={styles.back_button_icon} />
-          Back to Aesthetic Treatments
+          Back to Wellness Treatments
         </Link>
         <div className={styles.treatment_grid}>
           <div>
