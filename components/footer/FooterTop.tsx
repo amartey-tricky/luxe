@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "luxeclinic@gmail.com",
-    href: "mailto:luxeclinic@gmail.com"
+    value: "luxeclinicgh@gmail.com",
+    href: "mailto:luxeclinicgh@gmail.com"
   },
   {
     icon: MapPin,
