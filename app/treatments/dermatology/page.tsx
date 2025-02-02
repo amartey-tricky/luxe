@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Droplet, Zap, Leaf } from 'lucide-react';
+import { ChevronDown, Droplet, Zap, Leaf, Slice } from 'lucide-react';
 import Link from 'next/link';
 
 const treatments = [
@@ -25,7 +25,18 @@ const treatments = [
     name: 'Psoriasis Therapy',
     description: 'Manage psoriasis symptoms and achieve healthier skin. Our expert dermatologists offer personalized treatment plans, including topical therapies, light treatments, and systemic medications.',
     icon: Droplet
+  },
+   {
+    name: 'DPN Therapy',
+    description: 'DPN Therapy involves minor surgical procedures to remove unwanted skin growths, such as skin tags, moles, warts, and seborrheic keratoses, improving skin appearance and health',
+    icon: Slice
+  },
+  {
+    name: 'General Dermatology Treatment',
+    description: 'General dermatology treatments address various skin concerns, including acne, psoriasis, eczema, and skin allergies. Treatments may include topical creams, oral medications, and procedures like chemical peels and laser therapy.',
+    icon: Slice
   }
+  
 ];
 
 export default function WellnessPage() {
