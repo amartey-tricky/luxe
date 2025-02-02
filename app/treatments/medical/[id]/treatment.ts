@@ -70,7 +70,7 @@ export const treatmentData = [
     ],
     procedure: "The family planning process begins with a detailed consultation to understand individual or couple's reproductive goals. We provide comprehensive assessments, discuss various contraceptive options, offer fertility planning advice, and create personalized reproductive health strategies.",
     image: "/images/family-planning.jpg"
-  }
+  },
    {
     id: 4,
     name: "IV Infusions",
@@ -111,7 +111,7 @@ export const treatmentData = [
     image: "/images/sti-therapy.jpg"
   },
   {
-    id: 3,
+    id: 6,
     name: "Gynecological Infections Therapy",
     slug: "gynecological-infections-therapy",
     description: "Gyne Infection Therapy provides targeted treatment and management of gynecological infections, relieving symptoms, promoting healing, and restoring vaginal health.",
@@ -123,7 +123,7 @@ export const treatmentData = [
       "Relief from symptoms and improvement in overall health",
       "Personalized counseling and education",
       "Reduced risk of complications and long-term health problems",
-      "Improved quality of life and well-being"
+      "Improved quality of life and well-being",
       "Comprehensive health counseling",
     ],
     procedure: "Our comprehensive gynecological infections treatment program follows a thorough and confidential procedure. The process begins with a thorough medical history and physical examination, including a pelvic examination, to identify symptoms and determine the need for diagnostic testing. Our expert medical professionals will discuss treatment options with you, which may include antibiotic, antifungal, or antiviral therapies, and provide personalized counseling.",
