@@ -71,6 +71,64 @@ export const treatmentData = [
     procedure: "The family planning process begins with a detailed consultation to understand individual or couple's reproductive goals. We provide comprehensive assessments, discuss various contraceptive options, offer fertility planning advice, and create personalized reproductive health strategies.",
     image: "/images/family-planning.jpg"
   }
+   {
+    id: 4,
+    name: "IV Infusions",
+    slug: "iv-infusions",
+    description: "IV Infusion Therapy delivers essential nutrients, vitamins, and medications directly into the bloodstream, promoting optimal hydration, rejuvenation, and wellness.",
+    icon: Droplet,
+    fullDescription: "Indulge in the ultimate rejuvenation experience with our IV Infusion Therapy, a luxurious treatment that delivers essential nutrients, vitamins, and minerals directly into the bloodstream. This bespoke therapy addresses specific health and wellness concerns, including fatigue, dehydration, migraines, skin health, and immune system support. Our expert medical professionals create personalized IV cocktails using high-quality ingredients and advanced technology, allowing you to relax and rejuvenate in our serene environment, reclaiming vitality, rejuvenating the body, and revitalizing the mind.",
+    benefits: [
+      "Relieves fatigue & energy depletion",
+      "Replenishes hydration & electrolytes", 
+      "Alleviates migraines & headaches",
+      "Promotes skin health & anti-aging",
+      "Boosts immune system",
+      "Aids post-workout recovery",
+      "Supports detoxification & antioxidant replenishment",
+      "Rapidly relieves hangover symptoms, restoring vitality and hydration"
+    ],
+    procedure: "Our IV Infusion Therapy procedure begins with a thorough medical history review and consent form signing, followed by vital sign measurement to ensure stability. A suitable vein is selected, and the skin is cleaned and disinfected before IV insertion. Our expert medical professionals then administer a customized IV cocktail, featuring a tailored blend of vitamins, minerals, antioxidants, and medications, which is continuously monitored during treatment. Upon completion, the IV line is removed, and post-treatment monitoring ensures a safe and effective experience.",
+    image: "/iv-infusions.jpg"
+  },
+  {
+    id: 5,
+    name: "STI Therapy",
+    slug: "sti-therapy",
+    description: "STI Therapy provides effective treatment and management of sexually transmitted infections, promoting healthy sexual well-being and preventing long-term complications.",
+    icon: Weight,
+    fullDescription: "Our comprehensive STI treatment program provides confidential and compassionate care, including diagnostic testing, antibiotic and antiviral therapies, and counseling, for a range of STIs such as chlamydia, gonorrhea, herpes, HPV, and hepatitis B and C. Our expert medical professionals ensure a non-judgmental and supportive experience, promoting physical and emotional well-being, and providing education on risk reduction and prevention strategies to support overall health and wellness.",
+    benefits: [
+
+      "Confidential and compassionate care",
+      "Accurate diagnostic testing",
+      "Effective antibiotic and antiviral therapies",
+      "Personalized counseling and education",
+      "Treatment for a range of STIs",
+      "Promotion of physical and emotional well-being"
+    ],
+    procedure: "Our comprehensive STI treatment program follows a thorough and confidential procedure, ensuring accurate diagnosis and effective treatment. The process begins with diagnostic testing, including blood tests, urine tests, and swab tests, to determine the presence and type of STI. Our expert medical professionals will discuss treatment options, which may include antibiotic or antiviral therapies, and provide personalized counseling to address emotional or psychological concerns. Our counselors will also provide education on risk reduction and prevention strategies, and support to promote overall health and wellness. Throughout the process, our team provides a non-judgmental and supportive experience.",
+    image: "/images/sti-therapy.jpg"
+  },
+  {
+    id: 3,
+    name: "Gynecological Infections Therapy",
+    slug: "gynecological-infections-therapy",
+    description: "Gyne Infection Therapy provides targeted treatment and management of gynecological infections, relieving symptoms, promoting healing, and restoring vaginal health.",
+    icon: Heart,
+    fullDescription: "Our comprehensive gynecological infections treatment program provides confidential, effective, and compassionate care for women diagnosed with or suspected of having a gynecological infection. Our expert medical professionals conduct thorough medical histories, physical examinations, and diagnostic testing to determine the presence and type of infection. We treat a range of gynecological infections, including bacterial vaginosis, yeast infections, and chlamydia, using antibiotic, antifungal, and antiviral therapies. Our program also includes personalized counseling and education on risk reduction and prevention strategies.",
+    benefits: [
+      "Confidential and compassionate care",
+      "Accurate diagnosis and effective treatment",
+      "Relief from symptoms and improvement in overall health",
+      "Personalized counseling and education",
+      "Reduced risk of complications and long-term health problems",
+      "Improved quality of life and well-being"
+      "Comprehensive health counseling",
+    ],
+    procedure: "Our comprehensive gynecological infections treatment program follows a thorough and confidential procedure. The process begins with a thorough medical history and physical examination, including a pelvic examination, to identify symptoms and determine the need for diagnostic testing. Our expert medical professionals will discuss treatment options with you, which may include antibiotic, antifungal, or antiviral therapies, and provide personalized counseling.",
+    image: "/images/gynecological-infections-therapy.jpg"
+  }
 ];
 
 export function getTreatmentBySlug(slug: string): TreatmentProps {
