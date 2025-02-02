@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronDown, Droplet, Weight, Heart } from 'lucide-react'
+import { ChevronDown, Droplet, Weight, Heart, Ribbon, Pill, ShieldPlus } from 'lucide-react'
 import Link from 'next/link'
 
 
@@ -21,6 +21,21 @@ const treatments = [
     name: 'Family Planning',
     description: 'Comprehensive reproductive health solutions, including counseling and contraceptive options, to support patients\' reproductive goals.',
     icon: Heart
+  },
+   {
+    name: 'IV Infusions',
+    description: 'IV Infusion Therapy delivers essential nutrients and vitaminsdirectly into the bloodstream, promoting optimal hydration, rejuvenation, and wellness.',
+    icon: ShieldPlus
+  },
+   {
+    name: 'STI Therapy',
+    description: 'STI Therapy provides effective treatment and management of sexually transmitted infections, promoting healthy sexual well-being and preventing long-term complications.',
+    icon: Ribbon
+  },
+   {
+    name: 'Gynecological Infections Therapy',
+    description: 'Gyne Infection Therapy provides targeted treatment and management of gynecological infections, relieving symptoms, promoting healing, and restoring vaginal health.',
+    icon: Pill
   }
 ]
 
