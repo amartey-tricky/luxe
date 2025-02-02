@@ -57,7 +57,7 @@ export default async function TreatmentPage({
               <p className={styles.treatment_contact_text}>
                 Ready to experience the benefits of {treatment.name}? Book your appointment today!
               </p>
-              <Link href="/contact" className={styles.treatment_contact_button}>
+              <Link href="https://cal.com/luxe-clinic-gh/luxe-appointment" className={styles.treatment_contact_button}>
                 Book Appointment
               </Link>
             </div>
