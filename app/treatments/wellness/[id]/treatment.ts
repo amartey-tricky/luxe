@@ -16,8 +16,8 @@ export interface TreatmentProps {
 export const treatmentData: TreatmentProps[] = [
   {
     id: 1,
-    name: 'IV Infusion Therapy',
-    slug: 'iv-infusion-therapy',
+    name: 'Acne Therapy',
+    slug: 'acne-therapy',
     description: 'Delivers essential vitamins, minerals, and fluids directly into the bloodstream, enhancing energy, hydration, and overall well-being.',
     icon: Droplet,
     fullDescription: 'IV Infusion Therapy is an advanced medical treatment that involves administering a customized blend of vitamins, minerals, and hydration directly into the bloodstream. By bypassing the digestive system, this therapy ensures maximum absorption of essential nutrients, providing immediate and targeted health benefits.',
