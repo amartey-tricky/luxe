@@ -1,6 +1,34 @@
+import type { Metadata } from "next";
 import { Award, Heart, Users } from "lucide-react";
 import { Doctors } from "./doctors";
 import styles from "./index.module.css";
+
+const title = "About Us";
+const description = "Learn more about Luxe Clinic";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    siteName: "Luxe Clinic",
+    type: "website",
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: title,
+    description: description,
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ],
+    creator: "@luxeclinic",
+    site: "@luxeclinic"
+  }
+};
 
 export default function Page() {
   return (

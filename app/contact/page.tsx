@@ -1,6 +1,34 @@
+import type { Metadata } from "next";
 import { ContactForm } from "./contactform";
 import { MapPin, Phone, Mail } from "lucide-react";
 import styles from "./index.module.css";
+
+const title = "Contact Us";
+const description = "Contact Luxe Clinic for all enquiries, including appointments, consultations, and more.";
+
+export const metadata: Metadata = {
+  title: title,
+  description: description,
+  openGraph: {
+    title: title,
+    description: description,
+    siteName: "Luxe Clinic",
+    type: "website",
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: title,
+    description: description,
+    images: [
+      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+    ],
+    creator: "@luxeclinic",
+    site: "@luxeclinic"
+  }
+};
 
 export default function Page() {
   return (
