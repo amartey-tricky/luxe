@@ -20,7 +20,7 @@ export const treatmentData: TreatmentProps[] = [
     slug: 'acne-therapy',
     description: 'Clear skin, confident you. Customized acne therapy for lasting results.',
     icon: Droplet,
-    fullDescription: 'Get to the root of your acne with our comprehensive Acne Therapy. Our experienced practitioners will work with you to develop a tailored treatment plan, using the latest advancements.';
+    fullDescription: 'Get to the root of your acne with our comprehensive Acne Therapy. Our experienced practitioners will work with you to develop a tailored treatment plan, using the latest advancements.',
     benefits: [
       'Effective acne treatment improves overall appearance, boosting self-confidence and self-esteem.',
       'Acne treatment helps to reduce acne breakouts and prevent future occurrences.',
@@ -31,7 +31,7 @@ export const treatmentData: TreatmentProps[] = [
       'Acne treatment prevents bacterial and fungal infections associated with acne.',
       'Acne treatment reduces stress, anxiety, and depression related to acne.'
     ],
-    procedure: 'The acne treatment procedure begins with an initial consultation to discuss concerns and develop a personalized treatment plan. A thorough skin analysis is conducted to assess skin type and condition.';
+    procedure: 'The acne treatment procedure begins with an initial consultation to discuss concerns and develop a personalized treatment plan. A thorough skin analysis is conducted to assess skin type and condition.'
     image: '/images/iv-infusion-therapy.jpg'
   },
   {
@@ -40,7 +40,7 @@ export const treatmentData: TreatmentProps[] = [
     slug: 'eczema-therapy',
     description: 'Our Eczema Therapy provides relief from symptoms, promoting healthy skin and improving quality of life through personalized treatment plans.',
     icon: Zap,
-    fullDescription: 'Our Eczema Therapy is a comprehensive treatment program designed to provide relief from the symptoms of eczema, promoting healthy skin and improving quality of life. Our experienced practitioners will work with you to develop a personalized treatment plan.';
+    fullDescription: 'Our Eczema Therapy is a comprehensive treatment program designed to provide relief from the symptoms of eczema, promoting healthy skin and improving quality of life. Our experienced practitioners will work with you to develop a personalized treatment plan.',
     benefits: [
       'Relieves itching and discomfort',
       'Reduces inflammation and redness',
@@ -79,7 +79,7 @@ export const treatmentData: TreatmentProps[] = [
     slug: 'psoriasis-therapy',
     description: 'Say goodbye to red, scaly skin with our effective psoriasis treatments, combining cutting-edge technology with compassionate care.',
     icon: Zap,
-    fullDescription: 'Our Psoriasis Therapy is a comprehensive treatment program designed to provide relief from the symptoms of psoriasis, promoting healthy skin and improving quality of life. Our experienced practitioners will work with you to develop a personalized treatment plan.'
+    fullDescription: 'Our Psoriasis Therapy is a comprehensive treatment program designed to provide relief from the symptoms of psoriasis, promoting healthy skin and improving quality of life. Our experienced practitioners will work with you to develop a personalized treatment plan.',
     benefits: [
       'Reduces inflammation and slows skin cell growth',
       'Improves skin clarity and reduces scaling',
