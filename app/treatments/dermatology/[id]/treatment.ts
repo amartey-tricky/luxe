@@ -89,7 +89,7 @@ export const treatmentData: TreatmentProps[] = [
     ],
     procedure: 'Our Psoriasis Therapy procedure begins with an initial consultation to discuss treatment options and develop a personalized plan. Our experienced practitioners will assess the severity of the condition and recommend the best course of action.',
     image: '/images/laser-therapy.jpg'
-  }
+  },
     {
     id: 5,
     name: 'DPN Therapy',
@@ -107,7 +107,7 @@ export const treatmentData: TreatmentProps[] = [
     procedure: 'The DPN procedure typically begins with a thorough examination of the skin growths to determine the best course of treatment. A local anesthetic may be administered to ensure comfort during the procedure. The unwanted growths are then carefully removed using specialized instruments, such as scalpel, cryotherapy, or laser technology. The treated area is cleaned and dressed to promote healing. The entire procedure is usually quick, taking only a few minutes to an hour to complete.',
     image: '/images/laser-therapy.jpg'
   },
-    {
+  {
     id: 6,
     name: 'General Dermatology Treatments',
     slug: 'general-dermatology-treatments',
