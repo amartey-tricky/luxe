@@ -1,4 +1,4 @@
-import { LucideIcon, Droplet, Weight, Heart } from "lucide-react";
+import { LucideIcon, Droplet, Weight, Heart, ShieldPlus, Pill, Ribbon } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export interface TreatmentProps {
@@ -76,7 +76,7 @@ export const treatmentData = [
     name: "IV Infusions",
     slug: "iv-infusions",
     description: "IV Infusion Therapy delivers essential nutrients, vitamins, and medications directly into the bloodstream, promoting optimal hydration, rejuvenation, and wellness.",
-    icon: Droplet,
+    icon: ShieldPlus,
     fullDescription: "Indulge in the ultimate rejuvenation experience with our IV Infusion Therapy, a luxurious treatment that delivers essential nutrients, vitamins, and minerals directly into the bloodstream. This bespoke therapy addresses specific health and wellness concerns, including fatigue, dehydration, migraines, skin health, and immune system support. Our expert medical professionals create personalized IV cocktails using high-quality ingredients and advanced technology, allowing you to relax and rejuvenate in our serene environment, reclaiming vitality, rejuvenating the body, and revitalizing the mind.",
     benefits: [
       "Relieves fatigue & energy depletion",
@@ -96,7 +96,7 @@ export const treatmentData = [
     name: "STI Therapy",
     slug: "sti-therapy",
     description: "STI Therapy provides effective treatment and management of sexually transmitted infections, promoting healthy sexual well-being and preventing long-term complications.",
-    icon: Weight,
+    icon: Ribbon,
     fullDescription: "Our comprehensive STI treatment program provides confidential and compassionate care, including diagnostic testing, antibiotic and antiviral therapies, and counseling, for a range of STIs such as chlamydia, gonorrhea, herpes, HPV, and hepatitis B and C. Our expert medical professionals ensure a non-judgmental and supportive experience, promoting physical and emotional well-being, and providing education on risk reduction and prevention strategies to support overall health and wellness.",
     benefits: [
 
@@ -115,7 +115,7 @@ export const treatmentData = [
     name: "Gynecological Infections Therapy",
     slug: "gynecological-infections-therapy",
     description: "Gyne Infection Therapy provides targeted treatment and management of gynecological infections, relieving symptoms, promoting healing, and restoring vaginal health.",
-    icon: Heart,
+    icon: Pill,
     fullDescription: "Our comprehensive gynecological infections treatment program provides confidential, effective, and compassionate care for women diagnosed with or suspected of having a gynecological infection. Our expert medical professionals conduct thorough medical histories, physical examinations, and diagnostic testing to determine the presence and type of infection. We treat a range of gynecological infections, including bacterial vaginosis, yeast infections, and chlamydia, using antibiotic, antifungal, and antiviral therapies. Our program also includes personalized counseling and education on risk reduction and prevention strategies.",
     benefits: [
       "Confidential and compassionate care",
