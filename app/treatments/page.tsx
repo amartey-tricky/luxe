@@ -59,7 +59,7 @@ export default function Page() {
               Book a consultation with our expert team and discover how we can help you achieve your beauty and wellness goals.
             </p>
             <div className={styles.ctaButtonContainer}>
-              <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment" className={styles.ctaButton}>
+              <Link href="https://cal.com/luxe-clinic-gh/luxe-appointment" className={styles.ctaButton}>
                 Book a Consultation
               </Link>
             </div>
