@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     description: description,
     siteName: title,
     type: "website",
+    url: "https://luxeclinicgh.com",
     images: [
       { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
     ]
