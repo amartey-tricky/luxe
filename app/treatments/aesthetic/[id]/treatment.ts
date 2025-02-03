@@ -29,7 +29,7 @@ export const treatmentData: TreatmentProps[] = [
       "Stimulates collagen production",
     ],
     procedure: "During the treatment, your skin will be cleansed and the chemical solution will be applied. You may feel a slight burning sensation that lasts about five to ten minutes. Depending on the type of peel, you may need neutralization afterwards. Post-treatment care and recovery time vary based on the depth of the peel.",
-    image: ""
+    image: "luxe-treatments/des1hmoulaj9swi9xupt"
   },
   {
     id: 2,
@@ -97,7 +97,7 @@ export const treatmentData: TreatmentProps[] = [
       "Helps with hyperpigmentation",
     ],
     procedure: "The treatment involves four key steps: cleansing and exfoliation, acid peel, extraction, and hydration. A special device uses spiral suction to remove impurities while simultaneously delivering hydrating serums. The entire process takes about 30 minutes and provides immediate, noticeable results.",
-    image: ""
+    image: "luxe-treatments/h3ex2lrspidyilmqmp5p"
   },
   {
     id: 6,
