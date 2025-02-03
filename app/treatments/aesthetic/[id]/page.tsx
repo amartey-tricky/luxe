@@ -10,8 +10,9 @@ export async function generateStaticParams() {
   return getAllTreatmentSlugs();
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const treatment = getTreatmentBySlug(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const res = await params;
+  const treatment = getTreatmentBySlug(res.id);
 
   return {
     title: `${treatment.name} | Aesthetic Treatment`,
