@@ -97,7 +97,7 @@ export const treatmentData: TreatmentProps[] = [
       "Helps with hyperpigmentation",
     ],
     procedure: "The treatment involves four key steps: cleansing and exfoliation, acid peel, extraction, and hydration. A special device uses spiral suction to remove impurities while simultaneously delivering hydrating serums. The entire process takes about 30 minutes and provides immediate, noticeable results.",
-    image: ""
+    image: "luxe-treatments/h3ex2lrspidyilmqmp5p"
   },
   {
     id: 6,
