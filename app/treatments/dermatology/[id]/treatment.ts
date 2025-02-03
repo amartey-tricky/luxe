@@ -71,7 +71,7 @@ export const treatmentData: TreatmentProps[] = [
       'Offers quick recovery with minimal downtime.'
     ],
     procedure: 'Our wart removal therapy is a quick and effective treatment that can be completed in a few simple steps. The process begins with a consultation with our experienced practitioner, who will assess the warts and recommend the best treatment approach.',
-    image: '/images/iv-infusion-therapy.jpg'
+    image: "luxe-treatments/occbkniwihqna7xb5ntn"
   },
   {
     id: 4,
@@ -105,7 +105,7 @@ export const treatmentData: TreatmentProps[] = [
       "Boosted confidence and self-esteem through improved skin appearance."
     ],
     procedure: 'The DPN procedure typically begins with a thorough examination of the skin growths to determine the best course of treatment. A local anesthetic may be administered to ensure comfort during the procedure. The unwanted growths are then carefully removed using specialized instruments, such as scalpel, cryotherapy, or laser technology. The treated area is cleaned and dressed to promote healing. The entire procedure is usually quick, taking only a few minutes to an hour to complete.',
-    image: '/images/laser-therapy.jpg'
+    image: "luxe-treatments/zfuxahqda2cdbkkdppsr"
   },
   {
     id: 6,

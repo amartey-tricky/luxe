@@ -31,7 +31,7 @@ export const treatmentData = [
       "Uses patient's own biological material"
     ],
     procedure: "The PRP procedure involves drawing a small amount of the patient's blood, processing it in a centrifuge to concentrate the platelets, and then carefully injecting or applying the PRP to the target area. The entire process typically takes about 30-60 minutes and involves minimal discomfort.",
-    image: "https://defouqsu4x.ufs.sh/f/NLBok024UocEZuyqNNH5C1JBRcyPUAWrYIv8GisqM3TXo75z"
+    image: "luxe-treatments/ner3ylnan4rscp6ituih"
   },
   {
     id: 2,

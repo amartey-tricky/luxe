@@ -46,7 +46,7 @@ export const treatmentData: TreatmentProps[] = [
       "Promotes relaxation and stress relief",
     ],
     procedure: "A typical facial begins with a thorough skin analysis, followed by cleansing, exfoliation, extraction (if needed), and a customized mask. The treatment concludes with serums, moisturizers, and sun protection specific to your skin type and concerns.",
-    image: ""
+    image: "luxe-treatments/h3ex2lrspidyilmqmp5p"
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const treatmentData: TreatmentProps[] = [
       "Stimulates natural collagen production",
     ],
     procedure: "The laser treatment involves directing concentrated light beams at problem areas of the skin. Depending on the type of laser used (ablative or non-ablative), the treatment can be more or less invasive. The procedure typically takes 30 minutes to 2 hours, with recovery time varying based on the intensity of the treatment.",
-    image: ""
+    image: "luxe-treatments/lftwnkz66x0jig64gt7d"
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ export const treatmentData: TreatmentProps[] = [
       "Customizable treatment",
     ],
     procedure: "The treatment involves carefully placed injections in targeted areas. Botox is typically used in areas with dynamic wrinkles like forehead lines and crow's feet. Fillers are used to add volume to cheeks, lips, and smooth out deeper lines. The entire procedure usually takes 15-30 minutes with minimal downtime.",
-    image: ""
+    image: "luxe-treatments/ner3ylnan4rscp6ituih"
   },
   {
     id: 5,
@@ -131,7 +131,7 @@ export const treatmentData: TreatmentProps[] = [
       "Time-saving long-term solution",
     ],
     procedure: "During the treatment, a laser device is passed over the targeted area. The laser's light is absorbed by the hair's pigment, damaging the hair follicle and inhibiting future growth. Multiple sessions are required for optimal results, typically 6-8 treatments spaced 4-6 weeks apart.",
-    image: ""
+    image: "luxe-treatments/b1acir3x2jlkl23phalh"
   }
 ]
 

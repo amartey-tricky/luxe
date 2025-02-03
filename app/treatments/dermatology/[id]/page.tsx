@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import CldImage from "@/components/cldimage";
 import { getTreatmentBySlug, getAllTreatmentSlugs } from "./treatment";
 
 export async function generateStaticParams() {
@@ -45,7 +45,7 @@ export default async function TreatmentPage({
             <p className={styles.treatment_procedure_list}>{treatment.procedure}</p>
           </div>
           <div>
-            <Image
+            <CldImage
               src={treatment.image}
               alt={treatment.name}
               width={600}
