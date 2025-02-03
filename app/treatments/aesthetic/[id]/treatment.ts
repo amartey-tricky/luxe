@@ -29,7 +29,7 @@ export const treatmentData: TreatmentProps[] = [
       "Stimulates collagen production",
     ],
     procedure: "During the treatment, your skin will be cleansed and the chemical solution will be applied. You may feel a slight burning sensation that lasts about five to ten minutes. Depending on the type of peel, you may need neutralization afterwards. Post-treatment care and recovery time vary based on the depth of the peel.",
-    image: ""
+    image: "luxe-treatments/des1hmoulaj9swi9xupt"
   },
   {
     id: 2,
