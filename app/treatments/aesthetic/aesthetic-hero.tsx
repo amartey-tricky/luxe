@@ -16,7 +16,7 @@ export function AestheticHero() {
         >
           <h1 className={styles.heroTitle}>Enhance Your Natural <span className={styles.heroTitleHighlight}>Beauty</span></h1>
           <p className={styles.heroDescription}>
-            Discover our range of aesthetic treatments designed to help you achieve radiant, youthful skin and boost your confidence.
+            Discover our range of medical aesthetic treatments designed to help you achieve radiant, youthful skin and boost your confidence.
           </p>
           <motion.a
             href="#aesthetic"

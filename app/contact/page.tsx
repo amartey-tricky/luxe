@@ -48,7 +48,7 @@ export default function Page() {
                 <div className={styles.contactInfoText}>
                   <h3 className={styles.contactInfoTitle}>Address</h3>
                   <p className={styles.contactInfoDescription}>
-                    Kalpohini Estates, Tamale, Ghana
+                    Kalpohin Estates, Tamale, Ghana
                   </p>
                 </div>
               </article>

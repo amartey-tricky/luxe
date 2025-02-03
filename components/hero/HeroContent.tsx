@@ -22,7 +22,7 @@ export function HeroContent() {
   We are dedicated to maintaining exceptional standards in all our services and we are proud of every member of staff for their commitment to professional standards and conduct.
       </p>
       <div className={styles.buttonGroup}>
-        <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
+        <Link href="https://cal.com/luxe-clinic-gh/luxe-appointment">
           <Button size="lg" className={styles.primaryButton}>
             <Calendar className="mr-2 h-5 w-5" />
             Book Consultation

@@ -55,7 +55,7 @@ export function Header() {
           {/* Right Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <NavigationMenu items={rightNavItems} />
-            <Link href="https://cal.com/luxe-clinic-5ttd8o/luxe-appointment">
+            <Link href="https://cal.com/luxe-clinic-gh/luxe-appointment">
               <Button
                 size="lg"
                 className={styles.appointmentButton}
