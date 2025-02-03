@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import type { Metadata } from "next";
 
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -7,6 +8,33 @@ import { getTreatmentBySlug, getAllTreatmentSlugs } from "./treatment";
 
 export async function generateStaticParams() {
   return getAllTreatmentSlugs();
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const res = await params;
+  const treatment = getTreatmentBySlug(res.id);
+
+  return {
+    title: `${treatment.name} | Aesthetic Treatment`,
+    description: treatment.description,
+    openGraph: {
+      title: `${treatment.name} | Aesthetic Treatment`,
+      description: treatment.description,
+      url: `https://luxeclinicgh.com/treatments/aesthetic/${treatment.slug}`,
+      type: "website",
+      images: [
+        { url: treatment.image }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${treatment.name} | Aesthetic Treatment`,
+      description: treatment.description,
+      images: [
+        { url: treatment.image}
+      ]
+    }
+  }
 }
 
 export default async function TreatmentPage({
