@@ -10,6 +10,32 @@ export async function generateStaticParams() {
   return getAllTreatmentSlugs();
 }
 
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const treatment = getTreatmentBySlug(params.id);
+
+  return {
+    title: `${treatment.name} | Aesthetic Treatment`,
+    description: treatment.description,
+    openGraph: {
+      title: `${treatment.name} | Aesthetic Treatment`,
+      description: treatment.description,
+      url: `https://luxeclinicgh.com/treatments/aesthetic/${treatment.slug}`,
+      type: "website",
+      images: [
+        { url: "https://www.luxeclinicgh.com/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1579684385127-1ef15d508118%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80&w=640&q=75"}
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${treatment.name} | Aesthetic Treatment`,
+      description: treatment.description,
+      images: [
+        { url: "https://www.luxeclinicgh.com/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1579684385127-1ef15d508118%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80&w=640&q=75"}
+      ]
+    }
+  }
+}
+
 export default async function TreatmentPage({
   params,
 }: {

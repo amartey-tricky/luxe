@@ -150,3 +150,4 @@ export function getAllTreatmentSlugs(): { slug: string }[] {
     slug: treatment.slug
   }))
 }
+
