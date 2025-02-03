@@ -22,6 +22,7 @@ const description = "A clinic management system for Luxe Clinic"
 export const metadata: Metadata = {
   title: title,
   description: description,
+  keywords: "luxe clinic, aesthetics, botox, fillers, clinic, Tamale, tamale, Ang, Patty, dermatology, skincare, skin, acne, facials",
   openGraph: {
     title: title,
     description: description,
