@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Toaster } from "sonner";
 import "./globals.css";
+import { CSPostHogProvider } from "./providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <CSPostHogProvider>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -60,6 +62,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      </CSPostHogProvider>
     </html>
   );
 }
