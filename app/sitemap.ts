@@ -32,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "gynaecological-infections-therapy",
   ]
 
+    const dentalTreatments = [
+    "prp-therapy",
+    "medical-weight-loss-therapy",
+    "family-planning",
+    ]
+  
   const staticPages = [
     "",
     "/treatments",
@@ -66,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
+    const medicalPages = dentalTreatments.map((treatment) => ({
+    url: `${baseUrl}/treatments/dental/${treatment}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
 
   return [...staticPages, ...aestheticPages, ...dermatologyPages, ...medicalPages]
 }
