@@ -79,5 +79,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...aestheticPages, ...dermatologyPages, ...medicalPages]
+  return [...staticPages, ...aestheticPages, ...dermatologyPages, ...medicalPages, ...dentalPages]
 }
