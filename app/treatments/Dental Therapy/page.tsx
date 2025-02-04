@@ -6,14 +6,15 @@ import { ChevronDown, Droplet, Zap, Leaf, Slice, LifeBuoy } from 'lucide-react';
 import Link from 'next/link';
 
 const treatments = [
+ const treatments = [
   {
     name: 'Teeth Whitening',
-    description: 'Unlock a brighter, more radiant smile with our Luxe Teeth Whitening treatment. Our expert dentists use advanced technology to safely and effectively whiten your teeth, leaving you with a dazzling smile.',
+    description: 'Unlock a brighter, more radiant smile with our Luxe Teeth Whitening treatment. Our expert dentists use advanced technology to safely and effectively whiten your teeth, leaving you with a brilliant smile.',
     icon: Droplet
   },
   {
     name: 'Teeth Scaling & Planing',
-    description: 'Experience the ultimate in oral hygiene with our Luxe Dental Cleaning. Our expert hygienists use state-of-the-art technology to gently remove plaque, tartar, and stains, leaving your teeth feeling smooth and refreshed.',
+    description: 'Experience the ultimate in oral hygiene with our Luxe Dental Cleaning. Our expert hygienists use state-of-the-art technology to gently remove plaque, tartar, and stains, leaving your mouth feeling fresh and clean.',
     icon: Zap
   },
   {
@@ -21,7 +22,6 @@ const treatments = [
     description: 'We will be updating our dental services as and when more become available.',
     icon: Leaf
   }
-  
 ];
 
 export default function WellnessPage() {
@@ -136,7 +136,7 @@ function BenefitsSection() {
   return (
     <section className="py-20 bg-green-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Benefits of Our Dermatology Treatments</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Benefits of Our Dental Treatments</h2>
         <div className="max-w-3xl mx-auto">
           {benefits.map((benefit, index) => (
             <motion.div
