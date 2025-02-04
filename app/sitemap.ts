@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-    const medicalPages = dentalTreatments.map((treatment) => ({
+    const dentalPages = dentalTreatments.map((treatment) => ({
     url: `${baseUrl}/treatments/dental/${treatment}`,
     lastModified: currentDate,
     changeFrequency: "monthly" as const,
