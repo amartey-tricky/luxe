@@ -48,7 +48,7 @@ function HeroSection() {
             Revitalize Your <span className="text-green-600">Body and Mind</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Discover our range of dental treatments designed to support overall oral health and vitality, ensuring optimal oral health and a beautiful smile..
+            Discover our range of dental treatments designed to support overall oral health and vitality, ensuring optimal oral health and a beautiful smile.
           </p>
           <motion.a
             href="#treatments"
