@@ -48,7 +48,7 @@ function HeroSection() {
             Revitalize Your <span className="text-green-600">Body and Mind</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Discover our range of dermatology treatments designed to support overall health and vitality, helping you feel your best from the inside out.
+            Discover our range of dental treatments designed to support overall oral health and vitality, ensuring optimal oral health and a beautiful smile..
           </p>
           <motion.a
             href="#treatments"
@@ -81,7 +81,7 @@ function TreatmentsSection() {
   return (
     <section id="treatments" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Dermatology Treatments</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Our Dental Treatments</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {treatments.map((treatment, index) => (
             <TreatmentCard key={index} treatment={treatment} index={index} />
@@ -105,7 +105,7 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link href={`/treatments/dermatology/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+      <Link href={`/treatments/dental-therapy/${treatment.name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
         <div className="p-6">
           <div className="flex justify-center mb-4">
             <motion.div
@@ -126,11 +126,11 @@ function TreatmentCard({ treatment, index }: { treatment: typeof treatments[0], 
 
 function BenefitsSection() {
   const benefits = [
-    "Boosts self-confidence and self-esteem through improved skin.",
-    "Provides long-term results for healthy, glowing skin.",
-    "Enhances appearance by reducing fine lines, wrinkles, and age spots.",
-    "Improves skin health and reduces symptoms of skin conditions.",
-    "Prevents skin cancer by identifying and removing precancerous lesions."
+    "Enhance your oral well-being with our expert dental therapies.",
+    "Unlock a brighter smile and boost your self-confidence with our dental therapies.",
+    "Transform your smile with our cutting-edge dental therapies.",
+    "Protect your overall health by preventing oral health issues with our dental therapies.",
+    "Say goodbye to oral pain and discomfort with our expert dental therapies."
   ];
 
   return (
