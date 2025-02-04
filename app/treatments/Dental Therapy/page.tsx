@@ -6,7 +6,6 @@ import { ChevronDown, Droplet, Zap, Leaf, Slice, LifeBuoy } from 'lucide-react';
 import Link from 'next/link';
 
 const treatments = [
- const treatments = [
   {
     name: 'Teeth Whitening',
     description: 'Unlock a brighter, more radiant smile with our Luxe Teeth Whitening treatment. Our expert dentists use advanced technology to safely and effectively whiten your teeth, leaving you with a brilliant smile.',
