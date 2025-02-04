@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Droplet, Zap, Leaf, Slice, LifeBuoy } from 'lucide-react';
-import Link from 'next/link';
+import Link from '`${baseUrl}/treatments/medical/${treatment}';
 
 const treatments = [
  const treatments = [
