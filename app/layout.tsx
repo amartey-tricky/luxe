@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://luxeclinicgh.com",
     images: [
-      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+      { url: "https://utfs.io/f/NLBok024UocESdVltPx3Vtj2QJpluUD91egMziIZY4NTXGbc" }
     ]
   },
   twitter: {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: title,
     description: description,
     images: [
-      { url: "https://utfs.io/f/NLBok024UocEBeqrcFOSzPxtqk1XmV0sMTZ254ObNahgefcI" }
+      { url: "https://utfs.io/f/NLBok024UocESdVltPx3Vtj2QJpluUD91egMziIZY4NTXGbc" }
     ],
     creator: "@luxeclinic",
     site: "@luxeclinic"
