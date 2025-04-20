@@ -18,6 +18,19 @@ yarn-error.log*
 
 # env files
 .env*
+{
+  "type": "service_account",
+  "project_id": "luxe-calendar-457408",
+  "private_key_id": "2f8f912e54f9a5ea209603c55d21367eb57da999",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC19CUEGyql889v\nuaIebP+F7nXFbqpz1nFvoXIVAvfl/PMXmTavZ5VC6I5ai3tjpSxEbKautV3cWgaX\n4IEBQhIwBBZ6gvSq/bZM6ysQ5E3Rd/TcTEkEZr3oEIDH52Em0pdMvkmapqMxdxrG\n97gPmf6NyiIL6bG99xk7UcjX5sTNd7Kl8EBbgEbT3xOxCzx2giv79PmISOK6KvPH\n7ZGMOzDDwDCvnJirIsZZ5Mer7qS9wT6bnz8PwcNVc0Xjq8JyzWpInzem8Q4X/kkp\nToh61RnyPE60UNlstbpc9zs5k2sLPFjwDli7fyO7K8NpO2YNnx1em9CX8MEKTlK6\n+mseAnxtAgMBAAECggEAKciLwo5hhBQB0AiLPdzubcllkqXX7ztwt7+VlNUma9Jj\nWYk12WBaUq/YVtsehfKtgHYJ7edYy0wCJRjpTwpm5k9eARq3CFg0Z6P+cwXWh/J5\n0KgVAXV9iT/W7vEHqpRkKbut59157tdI1yWWR0DoB5QCLwWmqzbF/M0KZ+gGzB7c\nR+HhzmNpOesTKxGs+hTSIydLCSIOquk4/y/oSHrkVFAdnHOQHejZcmaL1oJ2Ieo4\nPDX0388v/Gv4ZPXAfMaLITL8sIg0rRYYk4iy4m5f3i00W8IE1NN4es23cDiyDc4+\nNZEUT1VbTKCb6Pv+fZHgE4/VvPJFzzuAKONe7lWeiQKBgQDdWDMciMBhn4JNNejK\n7UUYvsoPGWGjUTjhIn4OeyS9JhSx7O/0GOpp5iJOXxQaKRf7sDtis1jolh2CVFO4\n4Rszor4LG8+Yedj1DbhNtreuIIZwIvV44wa9P9HOpOOVaSJ5oOHZ4tOx+9tqfAjS\n7OKFJ9YCb1G3Dn7H78BDl0m+mQKBgQDScRrIS4THTJagLhJ/9wSFVwHkbyGhWNSL\na6hcWV2TIM6eTPGIgB8wO+pGFNaMzXpZTUoQNCUw8eptmHen9JFUe+v8ZDIuZScQ\nqO/0rFJaGzxqZrSxMLgUauAcnMgNaxW5zg6OKDYHYNT9CAY70ln70qKFXN9O0MYV\nAQeyUng09QKBgHlUY4/8lhftK6vPJTA3J20NCA2GyDKRzy/5jEe70MOuICH30wBm\nt/gcoil7jLVaWT8ptyO/U7kKsFpEhzAMlLCVQL8uG3llMTwCrUhMJBta0NafExeU\nupj6ZrNzRx0baD5rpeGdqJUjjX6tRtj36KM81t62zoAdfflyvl1OjKnhAoGBAINq\nOk1mS46h11ZELy1WNq6F/RqIA7pcXK6MFmFFNVhRnnXgmtyhFdjrMYt+K9VV49es\nmlmwFqGQENNL6T0rTy4xDNdaQrQSWujedqqWif7XD01qwd/9CpdFfpqflZY7jx+u\n/AvuNH87CwbQYgQtgh/uE6uwqYrweSJYuFO1iHeZAoGBAJnFRg157bO0XuoxecGI\nmC+tajdofoN8+zWB130cX5C/jQsaQQ79aIQu+58vZ3M3PBp9Ad0buydlGaKClHtB\nsFwkYD309w+n56pkSX29OuG8pCMngaWToWBuT4GGt16LAwF9oRUyFfDaGdtMWAPl\nOBJJMIeL9OQQy83RsB1nQK9V\n-----END PRIVATE KEY-----\n",
+  "client_email": "luxe-appointment-calendar@luxe-calendar-457408.iam.gserviceaccount.com",
+  "client_id": "108789098448094625194",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/luxe-appointment-calendar%40luxe-calendar-457408.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
 
 # vercel
 .vercel
