@@ -42,7 +42,7 @@ export function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className={styles.logoContainer}>
               <Image
-                src="https://utfs.io/f/NLBok024UocESdVltPx3Vtj2QJpluUD91egMziIZY4NTXGbc"
+                src="PHOTO-2026-02-02-22-48-00.jpg"
                 alt="Clinic Logo"
                 width={180}
                 height={60}
