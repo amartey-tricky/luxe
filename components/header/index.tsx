@@ -70,7 +70,7 @@ export function Header(): JSX.Element {
           <div className="flex-shrink-0">
             <Link href="/" aria-label="Luxe Clinic homepage" className={styles.logoContainer}>
               <Image
-                src="/WhatsApp Image 2026-05-19 at 4.54.56 PM.jpeg"
+                src="https://photos.google.com/album/AF1QipP_6SLT64XlIMPMtVwaDAmK6R6r4kOE0NtGwlcC/photo/AF1QipNtZADfL3Ds0Y5dmvuCd31kSiGCFkDf-RtRCz0u"
                 alt="Luxe Clinic logo"
                 width={180}
                 height={60}
