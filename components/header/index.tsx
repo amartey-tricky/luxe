@@ -60,7 +60,7 @@ export function Header(): JSX.Element {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between">
           {/* Left Navigation (desktop) */}
           <div className="hidden lg:flex items-center space-x-8">
             <NavigationMenu items={leftNavItems} />
@@ -76,8 +76,8 @@ export function Header(): JSX.Element {
               <Image
                 src="IMG_8442-removebg-preview.png"
                 alt="Luxe Clinic logo"
-                width={180}
-                height={180}
+                width={200}
+                height={123}
                 className={styles.logo}
                 priority
               />
