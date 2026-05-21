@@ -77,7 +77,7 @@ export function Header(): JSX.Element {
                 src="IMG_8442-removebg-preview.png"
                 alt="Luxe Clinic logo"
                 width={180}
-                height={60}
+                height={180}
                 className={styles.logo}
                 priority
               />
