@@ -1,16 +1,16 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Menu, X, Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-import { cn } from '@/lib/utils';
-import { NavigationMenu } from './NavigationMenu';
-import { MobileMenu } from './MobileMenu';
-import { leftNavItems, rightNavItems } from './navigation-items';
-import styles from './index.module.css';
-import { usePathname } from 'next/navigation';
+import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
+import { NavigationMenu } from "./NavigationMenu";
+import { MobileMenu } from "./MobileMenu";
+import { leftNavItems, rightNavItems } from "./navigation-items";
+import styles from "./index.module.css";
+import { usePathname } from "next/navigation";
 
 export function Header(): JSX.Element {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +30,10 @@ export function Header(): JSX.Element {
 
   useEffect(() => {
     // set initial state in case user lands mid-page
-    setIsScrolled(typeof window !== 'undefined' ? window.scrollY > 20 : false);
+    setIsScrolled(typeof window !== "undefined" ? window.scrollY > 20 : false);
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   // Close mobile menu on route change
@@ -45,18 +45,18 @@ export function Header(): JSX.Element {
   useEffect(() => {
     if (!isMobileMenuOpen) return;
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsMobileMenuOpen(false);
+      if (e.key === "Escape") setIsMobileMenuOpen(false);
     };
-    document.addEventListener('keydown', onKeyDown);
-    return () => document.removeEventListener('keydown', onKeyDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
   }, [isMobileMenuOpen]);
 
   return (
     <header
       className={cn(
-        'sticky top-0 w-full z-50 transition-all duration-300',
+        "sticky top-0 w-full z-50 transition-all duration-300",
         isScrolled ? styles.headerScrolled : styles.headerDefault,
-        styles.header
+        styles.header,
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,9 +68,13 @@ export function Header(): JSX.Element {
 
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" aria-label="Luxe Clinic homepage" className={styles.logoContainer}>
+            <Link
+              href="/"
+              aria-label="Luxe Clinic homepage"
+              className={styles.logoContainer}
+            >
               <Image
-                src="https://photos.google.com/album/AF1QipP_6SLT64XlIMPMtVwaDAmK6R6r4kOE0NtGwlcC/photo/AF1QipNtZADfL3Ds0Y5dmvuCd31kSiGCFkDf-RtRCz0u"
+                src="IMG_8442-removebg-preview.png"
                 alt="Luxe Clinic logo"
                 width={180}
                 height={60}
@@ -103,15 +107,22 @@ export function Header(): JSX.Element {
               onClick={() => setIsMobileMenuOpen((v) => !v)}
               className={styles.menuButton}
               aria-expanded={isMobileMenuOpen}
-              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
       </div>
 
-      <MobileMenu isOpen={isMobileMenuOpen} navItems={[...leftNavItems, ...rightNavItems]} />
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        navItems={[...leftNavItems, ...rightNavItems]}
+      />
     </header>
   );
 }
